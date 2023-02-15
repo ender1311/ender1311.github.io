@@ -115,3 +115,7 @@ body {
   .grid-container img {
     height: 200px;
   }
+
+  form {
+    padding-left: 20px;
+  }
