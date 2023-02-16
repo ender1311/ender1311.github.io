@@ -109,6 +109,17 @@ label, input {
     }
 }
 
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  .image-grid div {
+    text-align: center;
+  }
+  
 .grid-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
