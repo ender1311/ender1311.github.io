@@ -4,11 +4,18 @@
     caret-color: white;
 
 }
+
+iframe {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  
 .link:hover {
     caret-color: white;
   }
 
-  
+
 body {
     margin: 0px;
     padding: 0px;
