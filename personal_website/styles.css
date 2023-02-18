@@ -1,7 +1,12 @@
 * {
     box-sizing: border-box;
-}
+    -webkit-caret-color: white; /* Safari/Chrome */
+    caret-color: white;
 
+}
+.link:hover {
+    caret-color: white;
+  }
 body {
     margin: 0px;
     padding: 0px;
@@ -24,7 +29,7 @@ label, input {
     position: relative;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
+    background-color: #063970;
     color: white;
 }
 
@@ -115,9 +120,16 @@ label, input {
     grid-template-rows: repeat(2, 1fr);
     gap: 20px;
   }
+
+  .image-grid img{
+    height: 200px;
+
+  } 
   
   .image-grid div {
     text-align: center;
+    border: 1px solid gray;
+    padding: 10px;
   }
   
 .grid-container {
@@ -135,9 +147,6 @@ label, input {
     text-align: center;
   }
   
-  .grid-container img {
-    height: 200px;
-  }
 
   form {
     padding-left: 20px;
