@@ -4,7 +4,16 @@
     grid-template-rows: repeat(2, 1fr);
     gap: 20px;
   }
-  
+h1 {
+  font-size: 40px
+} 
+main p{
+    font-size: 24px;
+}
+
+main a {
+  font-size: 20px;
+}
   .grid-container a {
     display: flex;
     flex-direction: column;
