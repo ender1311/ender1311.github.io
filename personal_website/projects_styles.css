@@ -1,27 +1,48 @@
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 20px;
-  }
-h1 {
-  font-size: 40px
-} 
-main p{
-    font-size: 24px;
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
 }
 
-main a {
-  font-size: 20px;
+.image-grid img{
+  height: 200px;
+
+} 
+
+.image-grid img:hover {
+  transform: scale(1.15); /* increases the size of the image by 20% */
+  box-shadow: 5px 5px 10px #063970; /* increases the shadow size and opacity */
+
+} 
+/*background-color: #063970;*/
+.image-grid img:active {
+  box-shadow: 0 0 10px rgba(0, 252, 25, 0.3);
 }
-  .grid-container a {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  }
-  
-  .grid-container img {
-    height: 200px;
-  }
+.box-shadow img{
+  box-shadow: 5px 5px 10px #555;
+}
+
+.image-grid div {
+  text-align: center;
+  /* border: 2px solid gray; */
+  padding: 10px;
+  margin: 30px 30px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.grid-container a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+

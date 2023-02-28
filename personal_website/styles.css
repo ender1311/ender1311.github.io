@@ -30,6 +30,10 @@ main {
     
 }
 
+main a {
+    font-size: 20px;
+  }
+
 label, input {
     margin: 10px;
     padding: 0;
@@ -124,40 +128,6 @@ label, input {
         display: flex;
     }
 }
-
-.image-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 20px;
-  }
-
-  .image-grid img{
-    height: 200px;
-
-  } 
-  
-  .image-grid div {
-    text-align: center;
-    border: 1px solid gray;
-    padding: 10px;
-  }
-  
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 20px;
-  }
-  
-  .grid-container a {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  }
-  
 
   form {
     padding-left: 20px;
