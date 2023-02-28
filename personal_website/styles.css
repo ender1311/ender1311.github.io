@@ -17,20 +17,12 @@
     caret-color: white;
   }
 
-
 body {
-    /*
-    background-image: url('./files/binary-linkedin-banner_11zon.png');
-    opacity: .8;
-    background-size: cover;
-    background-position: center;
-    
-    */
     background-color: white;
     margin: 0px;
     padding: 0px;
 }
-
+  
 main {
     margin: 15px;
     padding: 15px;
