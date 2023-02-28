@@ -19,9 +19,16 @@
 
 
 body {
+    /*
+    background-image: url('./files/binary-linkedin-banner_11zon.png');
+    opacity: .8;
+    background-size: cover;
+    background-position: center;
+    
+    */
+    background-color: #faf1e8;
     margin: 0px;
     padding: 0px;
-    
 }
 
 main {
