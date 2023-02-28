@@ -1,10 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-  <link rel="stylesheet" href="https://ender1311.github.io/personal_website/background_styles.css">
-  <link rel="stylesheet" href="https://ender1311.github.io/personal_website/styles.css">
-  <script src="https://ender1311.github.io/personal_website/script.js" defer></script>
+  <script src="./jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="./background_styles.css">
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./about_styles.css">
+  <link rel="icon" href="./files/inf_code_low.png" type="image/png">
+  <script src="./script.js" defer></script>
   <title>About</title>
 </head>
 
@@ -12,62 +15,65 @@
 <body>
 
   <header>
-    <nav class="navbar">
-      <div class="brand-title">Coding Central</div>
-      <a href="#" class="toggle-button">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </a>
-      <div class="navbar-links">
-        <ul>
-          <li>
-            <a 
-            href="https://ender1311.github.io/personal_website/about.html"
-            >
-            About
-            </a>
-          </li>
-          <li>
-            <a 
-            href="https://ender1311.github.io/personal_website/Luk_Resume.pdf"
-            >
-            Résumé
-            </a>
-          </li>
-          <li>
-            <a 
-            href="https://ender1311.github.io/personal_website/projects.html"
-            >
-            Projects
-            </a>
-          </li>
-          <li>
-            <a 
-            href="https://ender1311.github.io/personal_website/publications.html"
-            >
-            Academic Publications
-            </a>
-          </li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-  </header>
-<main>
-    <h1>About me</h1>
+        <!--Navigation bar-->
+        <div id="nav-placeholder">
 
-    <p> I am looking to transition into the tech industry. <br/><br/>
-        I have started with the Codecademy bootcamp and learned the following:<br/>
-        <br/>
-        Javascript<br/>
-        HTML/CSS <br/>
-        SQL <br/>
-        React <br/>
-        Python <br/>
-        <br/>
-        Please contact me for inquires.
-    </p>
+        </div>
+
+        <script>
+        $(function(){
+        $("#nav-placeholder").load("navbar.html");
+        });
+        </script>
+
+    <!--end of Navigation bar-->
+  </header>
+
+  <main style="display: flex">
+    <div style="flex-grow: 1">
+        <h1>About me</h1>
+
+        <p> I am looking to transition into the tech industry. <br/><br/>
+            I have a basic working knowledge of the following:<br/>
+            <br/>
+            Javascript<br/>
+            HTML/CSS <br/>
+            SQL <br/>
+            React <br/>
+            Python <br/>
+            
+        </p>
+        <br/><br/><br/>
+        <h2>My Story</h2>
+        <p>I grew up with computers and video games.<br/>
+          I built my first computer and my first website at 15.<br/>
+          I learned C++ at 16.<br/>
+          
+          Video games inspired me with stories and connection between characters. 
+          Sadly, I realized I did not have those in reality. 
+          In a world where I was isolated from peers, computers offered a way for me to use my skills but didn’t fulfill the ache for friendships.<br/>
+          <br/>
+          In college, I discovered the incredible, transformative impact of a community that simply loved and valued me. 
+          I made many close friendships. 
+          At my wedding, I expanded my group of six groomsmen to include thirty mighty men.<br/>
+          <br/>
+          That transformation in college was so profound that I spent the next 15 years working for churches/ non-profits in order to see that incredible transformation work in others.<br/>
+          <br/>
+          Recently, I have decided to transition into the tech industry in order to combine my passion for technology with the determination to help people feel valued as human beings.<br/>
+          <br/>
+          I believe that tech can be leveraged for many positive things: quality of life, human connection, time spent with family and friends, and access to goods/services.<br/>
+          </p>
+    </div>
+
+    <div class="box-shadow">
+      <img 
+        height="auto" 
+        width= "200px"
+        src="./imgs/chicago3.jpg"
+        style="margin-right: 300px; border: 5px solid black; padding: 10px;"
+        >
+    </div>
+
   </main>
 </body>
 </html>

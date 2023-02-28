@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="./jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="./background_styles.css">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./resume_styles.css">
+    <link rel="icon" href="./files/inf_code_low.png" type="image/png">
+    <script src="./script.js" defer></script>
+  <title>Resume</title>
+</head>
+
+
+<body>
+
+    <header>
+          <!--Navigation bar-->
+          <div id="nav-placeholder">
+
+          </div>
+  
+          <script>
+          $(function(){
+          $("#nav-placeholder").load("navbar.html");
+          });
+          </script>
+  
+      <!--end of Navigation bar-->
+    </header>
+<main>
+    <p>Résumé</p>
+    <iframe id="view_window" src="./files/Luk_Resume.pdf#zoom=60"></iframe>
+    <p>Full Stack Professional Certification</p>
+    <img id="certificate" src="./files/professional_certification.jpg"></img>
+    
+</main>
+</body>
+</html>
+
+
+
+

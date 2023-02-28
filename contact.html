@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="./jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="./background_styles.css">
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="icon" href="./files/inf_code_low.png" type="image/png">
+  <script src="./script.js" defer></script>
+  <title>Contact Me</title>
+</head>
+
+
+<body>
+
+  <header>
+        <!--Navigation bar-->
+        <div id="nav-placeholder">
+
+        </div>
+
+        <script>
+        $(function(){
+        $("#nav-placeholder").load("navbar.html");
+        });
+        </script>
+
+    <!--end of Navigation bar-->
+  </header>
+<main>
+	<h1>Contact Me</h1>
+	<form action="submit-form.php" method="POST">
+		<h3>
+        Name: Dan Luk
+      <br>
+      <br>
+    		Email: 
+        <a href="mailto:danluk1311@gmail.com">
+          danluk1311@gmail.com
+        </a>
+      <br>
+      <br>
+        LinkedIn: 
+        <a href="https://www.linkedin.com/in/danluk1311/">
+          https://www.linkedin.com/in/danluk1311/
+        </a>
+      <br>
+        </h3>
+
+		
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+            
+            <label for="linkedin">LinkedIn:</label>
+            <input type="linkedin" id="linkedin" name="linkedin"><br>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" required></textarea><br>
+    
+            <input type="submit" value="Submit">
+        </form>
+	</main>
+</body>
+</html>

@@ -1,0 +1,34 @@
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+}
+
+#blade {
+    height: 200px;
+    width: auto;
+    border: 1px solid gray;
+    padding: 10px;
+    box-shadow: 5px 5px 10px #555;
+    margin-left: 50px;
+  }
+
+img:hover {
+    transform: scale(1.15); /* increases the size of the image by 20% */
+    box-shadow: 0 0 10px rgba(34, 249, 0, 0.3); /* increases the shadow size and opacity */
+  
+  } 
+  
+img:active {
+    box-shadow: 0 0 10px rgba(0, 252, 25, 0.3);
+  }
+
+
+  #view_window {
+    width: 50vw;
+    height: 60vh;
+    padding: 10px;
+    margin: 10px;
+    border: 5px solid black;
+  }

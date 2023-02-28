@@ -1,0 +1,58 @@
+main p {
+  font-size:24px;
+}
+.image-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.image-grid img {
+  height: 200px;
+  border: 10px double #063970;
+  border-radius: 15px;
+  padding:20px;
+  margin-bottom: 10px;
+}
+
+h1{
+  
+  margin-bottom: 60px;
+  margin-left: 70px;
+}
+
+.project-box {
+  border: 3px solid black;
+  padding: 30px;
+  margin-bottom: 60px;
+  margin-left: 50px;
+}
+
+.image-grid a {
+  display: block;
+}
+
+.image-grid p {
+  margin: 0;
+}
+
+
+
+.image-grid img:hover {
+  transform: scale(1.1); /* increases the size of the image by 20% */
+  box-shadow: 5px 5px 10px #063970; /* increases the shadow size and opacity */
+
+} 
+
+
+.image-grid img:active {
+  box-shadow: 0 0 10px rgba(0, 252, 25, 0.3);
+}
+.box-shadow img{
+  box-shadow: 5px 5px 10px #555;
+}
+
+
+
