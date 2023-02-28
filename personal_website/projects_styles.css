@@ -16,7 +16,8 @@
   box-shadow: 5px 5px 10px #063970; /* increases the shadow size and opacity */
 
 } 
-/*background-color: #063970;*/
+
+
 .image-grid img:active {
   box-shadow: 0 0 10px rgba(0, 252, 25, 0.3);
 }
