@@ -13,10 +13,12 @@
   }
 
 body {
+    /*
     background-image: url("./imgs/background/andrej-lisakov-3A4XZUopCJA-unsplash.jpg");
     background-position: center;
-    background-size: cover;
-    
+    background-size: contain;
+    background-attachment: fixed;
+    */
 }
   
 main {
