@@ -1,0 +1,149 @@
+
+.link:hover {
+    caret-color: white;
+  }
+
+.navbar {
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #063970;
+    color: white;
+}
+  
+main {
+    background-image: url("./imgs/background/leone-venter-16x9.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    padding: 80px 15px 15px 15px;
+    
+}
+
+main a {
+    font-size: 18px;
+  }
+
+label, input {
+    margin: 10px;
+    padding: 0;
+}
+
+
+.brand-title a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    margin-left:1.5rem;
+    display: block;
+    text-decoration: none;
+    color: white;
+
+}
+
+.brand-title a:hover {
+    color: yellow;
+}
+
+.navbar-links {
+    height: 100%;
+}
+
+.navbar-links ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+}
+
+.navbar-links li:hover {
+    background-color: #555;
+}
+
+@media (max-width: 800px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+    }
+
+    .navbar-links ul li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+}
+
+  form {
+    padding-left: 20px;
+  }
+
+ 
+  .main-footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #063970;
+    padding: .25em 0;
+    height: 50px;
+}
+
+.main-footer-container h3 {
+    margin: 0;
+    padding: 0 .5em;
+    color: white;
+}
+
+.main-footer-container ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-left:78vw;
+}
+
+.main-footer-container {
+    width:110%;
+    margin:-10px;
+}
+.footer-nav li {
+    margin: 20px;
+    
+}
+
+.footer-nav img {
+    width: 30px;
+    height: 30px;
+}
