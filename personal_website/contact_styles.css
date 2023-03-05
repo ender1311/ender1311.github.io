@@ -1,0 +1,17 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-left: 2vw;
+    
+  }
+
+
+section {
+    height:100vh;
+}
+
+label, input {
+  margin: 10px;
+  padding: 0;
+}

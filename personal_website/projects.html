@@ -1,7 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./jquery-3.6.0.min.js"></script>
+    
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./projects_styles.css">
+    <link rel="icon" href="./files/inf_code_low.png" type="image/png">
+    <script src="./script.js" defer></script>
 
   <title>Projects</title>
 </head>
@@ -9,28 +17,43 @@
 
 
 <body>
+    <header>
+          <!---->
+          <div id="nav-placeholder">
 
+          </div>
+  
+          <script>
+          $(function(){
+          $("#nav-placeholder").load("navbar.html");
+          });
+          </script>
+  
+      <!--end of -->
+    </header>
   <main>
-    <meta http-equiv="refresh" content="0; url=https://ender1311.github.io/coding_central/projects.html">
-
+    <section>
     <h1>Projects</h1>
     <div class="image-grid box-shadow">
-      <div>
-        <a href='https://ender1311.github.io/React_projects/ecommerce/'>
+
+      <div class="project-box">
+        <div id="minions_store">
+        <a href='https://ender1311.github.io/minions_store/dist/'>
         <img 
-        src="./imgs/eCommerce_demo2.gif" 
+        src="./imgs/ecommerce_demo.png" 
         alt="Image 1" 
         />
         </a>
-        <p >eCommerce Store</p>
+        <p >Minions eCommerce Store</p>
         <p>
-          <a href="https://github.com/ender1311/React_projects/tree/gh-pages/ecommerce/prebuild_code">
+          <a href="https://github.com/ender1311/minions_store">
           Code
           </a>
         </p>
       </div>
-
-        <div>
+      </div>
+        
+        <div class="project-box">
           <a href="https://ender1311.github.io/Projects/chinese_takeout/build/">
           <img src="./imgs/731d62e418fb3d3747e4b501dc9222dd.gif" alt="spicy garlic tofu" />
           </a>
@@ -42,7 +65,7 @@
           </p>
         </div>
 
-        <div>
+        <div class="project-box">
           <a href="https://ender1311.github.io/ebike_store">
           <img src="./imgs/howebikeswork.gif" alt="eBike Store" />
           </a>
@@ -54,7 +77,7 @@
           </p>
         </div>
 
-        <div>
+        <div class="project-box">
         <a href="https://ender1311.github.io/Projects/Tea%20Cozy/tea%20cozy.html">
         <img src="./imgs/img-bedford-bizarre.webp" alt="Tea Shop"/>
         </a>
@@ -66,7 +89,7 @@
         </p>
         </div>
     
-        <div>
+        <div class="project-box">
           <a href="https://ender1311.github.io/React_projects/articles/">
           <img src="https://cdn-icons-png.flaticon.com/512/8632/8632625.png" alt="Image 2"/>
           </a>
@@ -78,32 +101,24 @@
           </p>
         </div>
 
-        <div>
-          <a href="https://ender1311.github.io/React_projects/pipboy_to_do/">
-          <img src="https://ender1311.github.io/React_projects/pipboy_to_do/pipboy.png" alt="Image 2"/>
-          </a>
-          <p>To Do App (Fallout Pipboy Theme)</p>
-          <p>
-            <a href="https://github.com/ender1311/React_projects/tree/gh-pages/pipboy_to_do">
-            Code
-            </a>
-          </p>
-        </div>
-
-        <div>
-          <a href="https://ender1311.github.io/Projects/Film%20Finder/">
-          <img src="https://ender1311.github.io/personal_website/imgs/popcorn.png" alt="Image 2" height = "200px"/>
-          </a>
-          <p>Rate this film</p>
-          <p>
-            <a href="https://github.com/ender1311/Projects/tree/main/Film%20Finder">
-            Code
-            </a>
-          </p>
-        </div>
-
+        
       </div>
-
+    </section>
       </main>
+
+      <footer>
+        <!--Footer-->
+        <div id="footer-placeholder">
+
+        </div>
+
+        <script>
+        $(function(){
+        $("#footer-placeholder").load("footer.html");
+        });
+        </script>
+
+        <!--end of Footer-->
+      </footer>
 </body>
 </html>

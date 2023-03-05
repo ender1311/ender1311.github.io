@@ -1,3 +1,11 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-left: 5vw;
+  
+  }
+
 p {
     margin-left: 40px;
     font-size:24pt;
@@ -5,7 +13,7 @@ p {
 }
 
 #view_window {
-    width: 50vw;
+    width: 40vw;
     height: 60vh;
     padding: 10px;
     margin: 10px;
@@ -16,6 +24,6 @@ p {
     margin: 10px;
     padding: 10px;
     border: 5px solid black;
-    width: 60vw;
+    width: 40vw;
     height: auto;
 }

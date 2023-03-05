@@ -2,20 +2,48 @@ main p {
   font-size:24px;
 }
 .image-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 20px;
+  margin-top: 20px;
 }
 
-.image-grid img{
-  height: 200px;
+.image-grid img {
+  height: 20vh;
+  border: 3px solid #edb722;;
+  
+  border-radius: 15px;
+  padding:20px;
+  margin-bottom: 10px;
+}
 
-} 
+h1{
+margin-left: 7vw;
+
+}
+#minions_store {
+  height:100vh;
+}
+.project-box {
+  /*border: 3px solid black;*/
+  padding: 30px;
+  margin-bottom: 60px;
+  margin-left: 50px;
+}
+
+
+.image-grid a {
+  display: block;
+}
+
+.image-grid p {
+  margin: 0;
+}
 
 .image-grid img:hover {
-  transform: scale(1.15); /* increases the size of the image by 20% */
-  box-shadow: 5px 5px 10px #063970; /* increases the shadow size and opacity */
+  transform: scale(1.1); /* increases the size of the image by 20% */
+  box-shadow: 5px 5px 10px #edb722;; /* increases the shadow size and opacity */
 
 } 
 
@@ -27,25 +55,5 @@ main p {
   box-shadow: 5px 5px 10px #555;
 }
 
-.image-grid div {
-  text-align: center;
-  /* border: 2px solid gray; */
-  padding: 10px;
-  margin: 30px 30px;
-}
 
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  gap: 20px;
-}
-
-.grid-container a {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
 

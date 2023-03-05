@@ -1,9 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <script src="./jquery-3.6.0.min.js"></script>
-    <link rel="stylesheet" href="./background_styles.css">
+    
     <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="./resume_styles.css">
     <link rel="icon" href="./files/inf_code_low.png" type="image/png">
@@ -15,7 +18,7 @@
 <body>
 
     <header>
-          <!--Navigation bar-->
+          <!--Footer-->
           <div id="nav-placeholder">
 
           </div>
@@ -26,15 +29,41 @@
           });
           </script>
   
-      <!--end of Navigation bar-->
+      <!--end of Footer-->
     </header>
 <main>
     <p>Résumé</p>
-    <iframe id="view_window" src="./files/Luk_Resume.pdf#zoom=60"></iframe>
+    <iframe 
+      title="resume" 
+      id="view_window" 
+      src="https://ender1311.github.io/coding_central/files/Resume/DanLuk_Resume_frontend.pdf#toolbar=0&navpanes=0&scrollbar=0&zoom=60">
+    </iframe>
+    
     <p>Full Stack Professional Certification</p>
-    <img id="certificate" src="./files/professional_certification.jpg"></img>
+    <img 
+      id="certificate" 
+      src="./files/professional_certification.jpg" 
+      alt="certificate"
+      >
+    </img>
     
 </main>
+
+<footer>
+  <!--Footer-->
+  <div id="footer-placeholder">
+
+  </div>
+
+  <script>
+  $(function(){
+  $("#footer-placeholder").load("footer.html");
+  });
+  </script>
+
+<!--end of Footer-->
+</footer>
+
 </body>
 </html>
 

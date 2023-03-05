@@ -10,25 +10,28 @@ main p {
 }
 
 .image-grid img {
-  height: 200px;
-  border: 10px double #063970;
+  height: 20vh;
+  border: 3px solid #edb722;;
+  
   border-radius: 15px;
   padding:20px;
   margin-bottom: 10px;
 }
 
 h1{
-  
-  margin-bottom: 60px;
-  margin-left: 70px;
-}
+margin-left: 7vw;
 
+}
+#minions_store {
+  height:100vh;
+}
 .project-box {
-  border: 3px solid black;
+  /*border: 3px solid black;*/
   padding: 30px;
   margin-bottom: 60px;
   margin-left: 50px;
 }
+
 
 .image-grid a {
   display: block;
@@ -38,11 +41,9 @@ h1{
   margin: 0;
 }
 
-
-
 .image-grid img:hover {
   transform: scale(1.1); /* increases the size of the image by 20% */
-  box-shadow: 5px 5px 10px #063970; /* increases the shadow size and opacity */
+  box-shadow: 5px 5px 10px #edb722;; /* increases the shadow size and opacity */
 
 } 
 
