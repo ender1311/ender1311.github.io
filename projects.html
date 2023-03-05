@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="./jquery-3.6.0.min.js"></script>
-    <link rel="stylesheet" href="./background_styles.css">
+    
     <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="./projects_styles.css">
     <link rel="icon" href="./files/inf_code_low.png" type="image/png">
@@ -17,7 +18,7 @@
 
 <body>
     <header>
-          <!--Navigation bar-->
+          <!---->
           <div id="nav-placeholder">
 
           </div>
@@ -28,27 +29,30 @@
           });
           </script>
   
-      <!--end of Navigation bar-->
+      <!--end of -->
     </header>
   <main>
+    <section>
     <h1>Projects</h1>
     <div class="image-grid box-shadow">
 
       <div class="project-box">
+        <div id="minions_store">
         <a href='https://ender1311.github.io/minions_store/dist/'>
         <img 
-        src="./imgs/eCommerce_demo5.gif" 
+        src="./imgs/ecommerce_demo.png" 
         alt="Image 1" 
         />
         </a>
-        <p >eCommerce Store</p>
+        <p >Minions eCommerce Store</p>
         <p>
-          <a href="https://github.com/ender1311/React_projects/tree/gh-pages/ecommerce/prebuild_code">
+          <a href="https://github.com/ender1311/minions_store">
           Code
           </a>
         </p>
       </div>
-
+      </div>
+        
         <div class="project-box">
           <a href="https://ender1311.github.io/Projects/chinese_takeout/build/">
           <img src="./imgs/731d62e418fb3d3747e4b501dc9222dd.gif" alt="spicy garlic tofu" />
@@ -99,7 +103,22 @@
 
         
       </div>
-
+    </section>
       </main>
+
+      <footer>
+        <!--Footer-->
+        <div id="footer-placeholder">
+
+        </div>
+
+        <script>
+        $(function(){
+        $("#footer-placeholder").load("footer.html");
+        });
+        </script>
+
+        <!--end of Footer-->
+      </footer>
 </body>
 </html>
