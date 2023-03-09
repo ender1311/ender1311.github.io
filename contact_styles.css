@@ -1,0 +1,60 @@
+.container {
+	max-width: 80%;
+	margin: 0 auto;
+	
+}
+
+
+/* 
+form {
+	padding-left: 20px;
+  } 
+  */
+
+.contact {
+	display: flex;
+  flex-direction: row;
+	flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top:10vh;
+
+}
+
+.contact-item {
+	display: flex;
+  flex-direction: column;
+	align-items: center;
+	flex-basis: calc(20%); /* set width to 33.33% minus 20px margin */
+  margin: 20px; /* add margin between items */
+}
+
+.icon {
+	font-size: 40px; /* changes size of fa icon image within circle */
+	
+  color: white;
+
+  display: flex; /* add display flex to icon */
+	align-items: center; /* vertically center the icon */
+	justify-content: center; /* horizontally center the icon */
+	width: 100px;
+	height: 100px;
+	background-color: #0077b5; /* add background color */
+	border-radius: 50%; /* make it circular */
+}
+
+.text {
+  margin-top: 30px;
+  text-align: center;
+}
+.contact a {
+	text-decoration: none;
+}
+.text a {
+	color: #0077b5;
+	text-decoration: none;
+  	font-size: 30px;
+}
+
+a:hover {
+	text-decoration: none;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script src="./jquery-3.6.0.min.js"></script>
+    
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./resume_styles.css">
+    <link rel="stylesheet" href="./background_styles.css">
+    <link rel="icon" href="./files/inf_code_low.png" type="image/png">
+    <script src="./script.js" defer></script>
+  <title>Resume</title>
+</head>
+
+
+<body>
+
+    <header>
+          <!--Footer-->
+          <div id="nav-placeholder">
+
+          </div>
+  
+          <script>
+          $(function(){
+          $("#nav-placeholder").load("navbar.html");
+          });
+          </script>
+  
+      <!--end of Footer-->
+    </header>
+<main>
+    <p>Résumé 
+      <a href="./files/Resume/DanLuk_Resume.pdf"> (pdf) </a> 
+      <a href="./files/Resume/DanLuk_Resume.docx"> (docx) </a> 
+    </p>
+    <iframe 
+      title="resume" 
+      id="view_window" 
+      src="./files/Resume/DanLuk_Resume.pdf#navpanes=0&scrollbar=0&zoom=80">
+    </iframe>
+    
+    <p>Full Stack Professional Certification <a href="./files/professional_certification.jpg">(img)</a></p>
+    <img 
+      id="certificate" 
+      src="./files/professional_certification.jpg" 
+      alt="certificate"
+      >
+    </img>
+    
+</main>
+
+<footer>
+  <!--Footer-->
+  <div id="footer-placeholder">
+
+  </div>
+
+  <script>
+  $(function(){
+  $("#footer-placeholder").load("footer.html");
+  });
+  </script>
+
+<!--end of Footer-->
+</footer>
+
+</body>
+</html>
+
+
+
+

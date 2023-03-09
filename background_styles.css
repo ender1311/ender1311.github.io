@@ -1,0 +1,17 @@
+@media screen and (min-width:601px) {
+main {
+    background-image: url("./imgs/background/portrait4.jpg");
+    background-position: right;
+    background-size: contain;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    
+  }
+}
+
+/* Disable background image on small mobile screens */
+@media screen and (max-width: 600px) {
+    main {
+      background-image: none;
+    }
+  }

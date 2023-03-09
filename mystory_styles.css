@@ -1,0 +1,132 @@
+@font-face {
+    font-family: "Garamond";
+    src: url("./fonts/EB_Garamond/EBGaramond-VariableFont_wght.ttf");
+    
+  }
+  @font-face {
+    font-family: "Garamond";
+    src: url("./fonts/EB_Garamond/EBGaramond-Italic-VariableFont_wght.ttf");
+    
+  }
+  
+  @font-face {
+    font-family: "Bodoni";
+    src: url("./fonts/Bodoni_Moda/BodoniModa-VariableFont_opsz\,wght.ttf");
+  }
+  
+  @font-face {
+    font-family: "Bodoni";
+    src: url("./fonts/Bodoni_Moda/BodoniModa-Italic-VariableFont_opsz\,wght.ttf");
+  }
+  
+  @font-face {
+    font-family: "Century";
+    src: url("./fonts/century-expanded-regular_a00wT/Century\ Expanded\ Regular/Century Expanded Regular.otf");
+  }
+  
+  @font-face {
+    font-family: "Futura";
+    src: url("./fonts/Futura/futura medium bt.ttf");
+  }
+
+main {
+    font-size: 30px;
+    margin-left:100px;
+
+}
+p {
+  margin-top:50px;
+  margin-bottom:50px;
+  opacity: 0;
+}
+h1, h2 {
+  font-family: "Futura";
+  font-weight: bold;
+}
+h1 {
+    font-size: 48px;
+    margin-top:100px;
+    margin-bottom:100px;
+    color:#edb722;
+}
+
+h2 {
+  color:rgb(41, 88, 175);
+  margin-bottom: 100px;
+}
+.story_container {
+    display: flex;
+    flex-direction: column;
+ 
+    width:50%;
+}
+/* .fade-in{
+  opacity: 1;
+} */
+
+/* fade in animation */
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 2s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+} 
+
+
+@media screen and (max-width: 500px){
+
+    body {
+      background-image: none;
+      margin:0px;
+    }
+    main {
+      font-size: 24px;
+      
+  
+  }
+  
+  h1 {
+      font-size: 36px;
+  }
+  
+  .story_container {
+      display: flex;
+      flex-direction: column;
+  
+      
+  }
+  
+}
+span {
+    font-family: "Century";
+    font-style: italic;
+}
+.highlight_grew {
+color: green;
+
+}
+
+.highlight_inspired {
+    color: teal;
+}
+
+
+.highlight_ache {
+    color: blue
+}
+
+
+.highlight_value {
+    color:red;
+}
+
+
+
