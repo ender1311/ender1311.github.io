@@ -1,0 +1,150 @@
+@font-face {
+  font-family: "Garamond";
+  src: url("./fonts/EB_Garamond/EBGaramond-VariableFont_wght.ttf");
+  
+}
+@font-face {
+  font-family: "Garamond";
+  src: url("./fonts/EB_Garamond/EBGaramond-Italic-VariableFont_wght.ttf");
+  
+}
+
+@font-face {
+  font-family: "Bodoni";
+  src: url("./fonts/Bodoni_Moda/BodoniModa-VariableFont_opsz\,wght.ttf");
+}
+
+@font-face {
+  font-family: "Bodoni";
+  src: url("./fonts/Bodoni_Moda/BodoniModa-Italic-VariableFont_opsz\,wght.ttf");
+}
+
+@font-face {
+  font-family: "Century";
+  src: url("./fonts\century-expanded-regular_a00wT\Century Expanded Regular.otf");
+}
+
+@font-face {
+  font-family: "Futura";
+  src: url("./fonts/Futura/futura medium bt.ttf");
+}
+
+
+main {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+
+}
+
+
+
+.box-shadow img{
+    box-shadow: 5px 5px 10px #555;
+    width:200px;
+    border: 5px solid black;
+    padding: 10px;
+    margin: 10px 30px 10px 80px;
+    
+  }
+
+.first-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 80vw;
+  margin-left: 10vw;
+}
+.container > div {
+  flex: 33%; /* or - flex: 0 50% - or - flex-basis: 50% - */
+  /*demo*/
+  
+
+}
+
+section {
+    width:100%;
+    margin: 20px 20px 20px 20px;
+    padding: 0 1.5em;
+}
+.skills_list {
+  width:auto;
+  
+}
+.skills_list ul {
+  list-style: none;
+}
+
+.skills_list li {
+  margin:20px;
+}
+
+#tech_skill_title {
+  font-size: 36px;
+  font-weight: bold;
+  color: #edb722;
+  
+}
+/* .tech_skills {
+  background-color: rgb(164, 198, 218);
+  width: 30vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 100px; 
+  border-radius: 50px;
+  
+} */
+
+.tech_image img{
+  border-radius: 50%;
+}
+h2 {
+  color: #555;
+
+}
+
+.link_story {
+  margin-top:10vh;
+
+}
+.link_story ul {
+  list-style: none;
+  
+  
+}
+
+
+.button-link {
+  display: inline-block;
+  background-color: #edb722; /* Change to desired color */
+  color: #fff; /* Change to desired color */
+  padding: 10px 20px; /* Change to desired padding */
+  text-decoration: none;
+  border-radius: 50px; /* Change to desired border radius */
+  border: none;
+  cursor: pointer;
+  font-size: 16px; /* Change to desired font size */
+  font-weight: bold; /* Change to desired font weight */
+  text-align: center;
+
+  text-decoration: none;
+
+  font-family: "Garamond";
+  font-size: 32px;
+  color:white;
+  font-weight: bold;
+}
+
+.button-link:hover {
+  background-color: #0069d9; /* Change to desired hover color */
+}
+/* .link_story {
+  margin-top:10vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100vw;
+  background-color: rgb(164, 198, 218);
+  
+} */

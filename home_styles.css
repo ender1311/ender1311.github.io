@@ -1,0 +1,136 @@
+@font-face {
+  font-family: "Garamond";
+  src: url("./fonts/EB_Garamond/EBGaramond-VariableFont_wght.ttf");
+  
+}
+@font-face {
+  font-family: "Garamond";
+  src: url("./fonts/EB_Garamond/EBGaramond-Italic-VariableFont_wght.ttf");
+  
+}
+
+@font-face {
+  font-family: "Bodoni";
+  src: url("./fonts/Bodoni_Moda/BodoniModa-VariableFont_opsz\,wght.ttf");
+}
+
+@font-face {
+  font-family: "Bodoni";
+  src: url("./fonts/Bodoni_Moda/BodoniModa-Italic-VariableFont_opsz\,wght.ttf");
+}
+
+@font-face {
+  font-family: "Century";
+  src: url("./fonts\century-expanded-regular_a00wT\Century Expanded Regular.otf");
+}
+
+@font-face {
+  font-family: "Futura";
+  src: url("./fonts/Futura/futura medium bt.ttf");
+}
+
+main {
+  height:80vh;
+}
+
+.introduction {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    height: 100%;
+    margin-left: 200px;
+    transform: translateY(-50px);
+}
+
+.introduction p {
+  margin:auto;
+}
+
+#hello_intro {
+  font-family: "Futura", "Arial";
+}
+
+#name {
+    font-size: 120px;
+    font-family:"Futura", "Century", "Arial";
+    font-weight: bold;
+  
+
+}
+
+#name span.highlight {
+  color: #063970
+  
+}
+#hello_intro {
+  font-size: 18px;
+}
+
+#role {
+  font-size:24px;
+}
+
+#role span.generic_role {
+font-style: italic;
+}
+
+span.highlight {
+    color:#edb722;
+    font-weight: bold;
+  }
+  
+ 
+@media screen and (max-width: 800px){
+    
+    main {
+      height:800px;
+      margin:0px;
+    }
+    
+    .introduction {
+      display: inline-flex;
+      height:400px;
+    margin:0px;
+      
+    }
+    
+    .introduction p {
+      margin:auto;
+    }
+    
+    #hello_intro {
+      font-family: "Futura", "Arial";
+    }
+    
+    #name {
+        font-size: 36px;
+        font-family:"Futura", "Century", "Arial";
+        font-weight: bold;
+      
+    
+    }
+    
+    #name span.highlight {
+      color: #063970
+      
+    }
+    #hello_intro {
+      font-size: 12px;
+    }
+    
+    #role {
+      font-size:18px;
+    }
+    
+    #role span.generic_role {
+    font-style: italic;
+    }
+    
+    span.highlight {
+        color:#edb722;
+        font-weight: bold;
+      }
+      
+  }
+   
