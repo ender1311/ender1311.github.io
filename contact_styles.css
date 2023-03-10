@@ -58,3 +58,12 @@ form {
 a:hover {
 	text-decoration: none;
 }
+@media screen and (max-width: 700px) {
+	.contact {
+		display: flex;
+	  flex-direction: column;
+	  justify-content: space-between;
+	  margin-top:0px;
+	
+	}
+}
