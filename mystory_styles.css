@@ -29,30 +29,38 @@
     src: url("./fonts/Futura/futura medium bt.ttf");
   }
 
+body {
+  background-color: black;
+}
 main {
-    font-size: 30px;
+    
     margin-left:100px;
-
+    
 }
 p {
-  margin-top:50px;
-  margin-bottom:50px;
+  font-size: 38px;
+  margin-top:100px;
+  margin-bottom:100px;
   opacity: 0;
+  color:white;
 }
 h1, h2 {
   font-family: "Futura";
   font-weight: bold;
+  
 }
 h1 {
     font-size: 48px;
-    margin-top:100px;
-    margin-bottom:100px;
+    margin-top:50px;
+    margin-bottom:300px;
     color:#edb722;
 }
 
 h2 {
+  font-size: 40px;
   color:rgb(41, 88, 175);
-  margin-bottom: 100px;
+  margin-bottom: 200px;
+  opacity: 0;
 }
 .story_container {
     display: flex;
@@ -68,7 +76,7 @@ h2 {
 
 .fade-in {
   opacity: 0;
-  animation: fadeIn 2s ease-in-out forwards;
+  animation: fadeIn 3s ease-in-out forwards;
 }
 
 @keyframes fadeIn {

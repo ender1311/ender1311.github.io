@@ -50,26 +50,22 @@
   .first-row {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     flex-wrap: wrap;
-    width: 80vw;
-    margin-left: 10vw;
+    width: 100%;
+    margin-left: 0vw;
   }
   .container > div {
-    flex: 33%; /* or - flex: 0 50% - or - flex-basis: 50% - */
+   /* or - flex: 0 50% - or - flex-basis: 50% - */
     /*demo*/
     
   
   }
   
-  section {
-      width:100%;
-      margin: 20px 20px 20px 20px;
-      padding: 0 1.5em;
-  }
+
   .skills_list {
     width:auto;
-    
+    margin-right: 50px;
   }
   .skills_list ul {
     list-style: none;
@@ -89,6 +85,8 @@
   
   .tech_image img{
     border-radius: 50%;
+    margin-left:100px;
+    
   }
   h2 {
     color: #555;
@@ -97,7 +95,9 @@
   
   .link_story {
     margin-top:10vh;
-  
+    flex-basis: 100%;
+    margin-top: 20px;
+    text-align: left;
   }
   .link_story ul {
     list-style: none;
@@ -141,30 +141,29 @@
   } */
 
 
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 700px) {
 
     
   main {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
+    font-size: 20px;
     padding:0px;
     margin:0px;
     width:100%
   }
   
-  .container > div {
-    flex: none; /* or - flex: 0 50% - or - flex-basis: 50% - */
-    /*demo*/
-    
-  
-  }
+
   
  
   
-  .first-row {
+  .container {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 100%;
+    height:100%;
+    margin-left: 0px;
    padding: 0px;
     
   }
@@ -173,7 +172,7 @@
   section {
       width:100%;
       padding:0px;
-  
+  margin:0px;
   }
   .skills_list {
     width:auto;
@@ -184,11 +183,12 @@
   }
   
   .skills_list li {
-
+    margin: 10px;
+  
   }
   
   #tech_skill_title {
-    font-size: 24px;
+    font-size: 28px;
     font-weight: bold;
     color: #edb722;
     
@@ -206,7 +206,7 @@
   }
   
   .link_story {
-    margin-top:10vh;
+    margin-top:20px;
   
   }
   .link_story ul {
@@ -217,7 +217,7 @@
   
   
   .button-link {
-    width:auto;
+    width:250px;
 
     display: flex;
     background-color: #edb722; /* Change to desired color */
