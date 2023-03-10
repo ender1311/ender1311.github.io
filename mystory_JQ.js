@@ -1,3 +1,5 @@
+//this script will add transition fade in effects for text.
+
 $(document).ready(function() {
     // Get all paragraphs in the story container
     const paragraphs = $('.story_container p');
