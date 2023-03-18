@@ -55,6 +55,15 @@
     width: 100%;
     margin-left: 0vw;
   }
+
+  .first-row > * {
+    margin-bottom: 100px; /* add margin between first row elements */
+  }
+  
+  .first-row > :nth-child(n+4) {
+    margin-top: 100px; /* add margin between second row elements */
+  }
+
   .container > div {
    /* or - flex: 0 50% - or - flex-basis: 50% - */
     /*demo*/
@@ -141,7 +150,7 @@
   } */
 
 
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 767px) {
 
     
   main {
@@ -152,7 +161,10 @@
     width:100%
   }
   
-
+  .tech_image {
+    display: none;
+    
+  }
   
  
   

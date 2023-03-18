@@ -163,7 +163,7 @@ main a {
 .footer-nav img {
   width: 30px;
   height: 30px;
-  margin-right: 10px;
+
 }
 } 
 
@@ -201,7 +201,7 @@ main a {
 .footer-nav img {
     width: 40px;
     height: 40px;
-    margin-right: 10px;
+    margin-right: 30px;
     transform: translateY(-50px);
     
 }
