@@ -150,7 +150,7 @@
   } */
 
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1400px) {
 
     
   main {
@@ -246,7 +246,7 @@
     text-decoration: none;
   
     font-family: "Garamond";
-    font-size: 16px;
+    font-size: 28px;
     color:white;
     font-weight: bold;
   }
