@@ -64,9 +64,7 @@ span.highlight {
  
 @media screen and (max-width: 800px) {
     
-    main {
 
-    }
     
     .introduction {
       display: inline-flex;
