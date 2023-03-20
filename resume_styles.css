@@ -33,7 +33,7 @@ p {
 
   .button-link {
     margin:50px;
-
+    padding: 20px 40px; /* Change to desired padding */
     box-shadow: 5px 5px 10px #555;
 
     display: inline-block;
@@ -42,7 +42,7 @@ p {
 
 
     color: #fff; /* Change to desired color */
-    padding: 10px 20px; /* Change to desired padding */
+    
     text-decoration: none;
     border-radius: 50px; /* Change to desired border radius */
     border: none;
@@ -53,8 +53,8 @@ p {
   
     text-decoration: none;
   
-    font-family: "Garamond";
-    font-size: 32px;
+    font-family: "Arial";
+    font-size: 28px;
     color:white;
     font-weight: bold;
   }
