@@ -1,8 +1,19 @@
+@font-face {
+  font-family: "Garamond";
+  src: url("./fonts/EB_Garamond/EBGaramond-VariableFont_wght.ttf");
+  
+}
+@font-face {
+  font-family: "Garamond";
+  src: url("./fonts/EB_Garamond/EBGaramond-Italic-VariableFont_wght.ttf");
+  
+}
+
 main {
     display: flex;
     flex-direction: column;
-    align-items: left;
-    margin-left: 5vw;
+    align-items: center;
+    
   
   }
 
@@ -12,16 +23,49 @@ p {
     margin-bottom: 0px;
 }
 
-#view_window {
-    width: 60%;
-    height: 60vh;
+#resume-img {
+    width:70%;
+    object-fit: contain;
     padding: 10px;
     margin: 10px;
     border: 5px solid black;
   }
 
+  .button-link {
+    margin:50px;
+
+    box-shadow: 5px 5px 10px #555;
+
+    display: inline-block;
+    
+    background-color: #edb722; /* Change to desired color */
+
+
+    color: #fff; /* Change to desired color */
+    padding: 10px 20px; /* Change to desired padding */
+    text-decoration: none;
+    border-radius: 50px; /* Change to desired border radius */
+    border: none;
+    cursor: pointer;
+    font-size: 16px; /* Change to desired font size */
+    font-weight: bold; /* Change to desired font weight */
+    text-align: center;
+  
+    text-decoration: none;
+  
+    font-family: "Garamond";
+    font-size: 32px;
+    color:white;
+    font-weight: bold;
+  }
+
+  .button-link:hover {
+    background-color: #0069d9; /* Change to desired hover color */
+    background: #0069d9;
+  }
+
 #certificate {
-    width: 60%;
+    width: 70%;
     margin: 10px;
     padding: 10px;
     border: 5px solid black;
