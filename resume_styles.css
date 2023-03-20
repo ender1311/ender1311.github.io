@@ -13,7 +13,7 @@ p {
 }
 
 #view_window {
-    width: 40vw;
+    width: 50%;
     height: 60vh;
     padding: 10px;
     margin: 10px;
@@ -24,11 +24,11 @@ p {
     margin: 10px;
     padding: 10px;
     border: 5px solid black;
-    width: 40vw;
+    width: 50%;
     height: auto;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1200px) {
 
   main {
     display: inline-flex;
@@ -43,7 +43,7 @@ p {
 }
 
 #view_window {
-    width: 80vw;
+    width: 90%;
     height: 60vh;
     padding: 10px;
     margin: 10px;
@@ -54,7 +54,7 @@ p {
     margin: 10px;
     padding: 10px;
     border: 5px solid black;
-    width: 90vw;
+    width: 90%;
     height: auto;
 }
 

@@ -9,15 +9,7 @@
     
   }
   
-  @font-face {
-    font-family: "Bodoni";
-    src: url("./fonts/Bodoni_Moda/BodoniModa-VariableFont_opsz\,wght.ttf");
-  }
-  
-  @font-face {
-    font-family: "Bodoni";
-    src: url("./fonts/Bodoni_Moda/BodoniModa-Italic-VariableFont_opsz\,wght.ttf");
-  }
+
 
 Body {
     
@@ -65,17 +57,12 @@ Body {
 .navbar-links li a:hover {
     color: #edb722;
     cursor: pointer;
-    
-    /* increases the size of the image by 20% */
-    /*box-shadow: 1px 1px 2px #063970; dark blue option *//* increases the shadow size and opacity */
   
 }
 
 main {
 
 
-    padding: 80px 15px 50px 15px;
-    margin-bottom:50px;
 }
 
 main a {
@@ -102,29 +89,8 @@ main a {
 }
 
 
-/* @media screen and (max-width: 500px) {
-    a {
-        font-size: 8px;
-    }
-    header {
-      width: 350px;
-    }
-    
-    main {
-      width: 350px;
-      margin: 0;
-      padding: 0;
-    }
-  
-    .introduction {
-      margin-left: 10px;
-      margin-right: 10px;
 
-    }
-  } */
-  
-
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 800px) {
   a {
     font-size: 12px;
 }
@@ -133,13 +99,17 @@ main a {
       }
 
     .navbar {
-      width:400px
+      z-index: 100;
+      width: 100%;
+      height: 7%;
+      margin-top:-10px;
+      border-bottom: 5px double gray;
     }
 
     .navbar-links {
         
-        font-size: 8px;
-        transform: translatex(-20px);
+        font-size: 12px;
+        transform: translatex(-30px);
         
     }
 
@@ -148,15 +118,16 @@ main a {
     }
 
     .navbar-links ul li {
-        text-align: left;
+       
     }
 
     .navbar-links ul li a {
-        padding: .5rem 1rem;
+        padding: 0px;
+        margin-right: 1rem;
     }
 
     .navbar-links.active {
-        display: flex;
+        
     }
 
     

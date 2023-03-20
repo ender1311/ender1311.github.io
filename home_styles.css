@@ -1,25 +1,4 @@
 @font-face {
-  font-family: "Garamond";
-  src: url("./fonts/EB_Garamond/EBGaramond-VariableFont_wght.ttf");
-  
-}
-@font-face {
-  font-family: "Garamond";
-  src: url("./fonts/EB_Garamond/EBGaramond-Italic-VariableFont_wght.ttf");
-  
-}
-
-@font-face {
-  font-family: "Bodoni";
-  src: url("./fonts/Bodoni_Moda/BodoniModa-VariableFont_opsz\,wght.ttf");
-}
-
-@font-face {
-  font-family: "Bodoni";
-  src: url("./fonts/Bodoni_Moda/BodoniModa-Italic-VariableFont_opsz\,wght.ttf");
-}
-
-@font-face {
   font-family: "Century";
   src: url("./fonts\century-expanded-regular_a00wT\Century Expanded Regular.otf");
 }
@@ -30,8 +9,10 @@
 }
 
 main {
-  height:80vh;
+ height:100vh;
 }
+
+
 
 .introduction {
     display: flex;
@@ -40,7 +21,7 @@ main {
 
     height: 100%;
     margin-left: 200px;
-    transform: translateY(-50px);
+
 }
 
 .introduction p {
@@ -81,11 +62,10 @@ span.highlight {
   }
   
  
-@media screen and (max-width: 800px){
+@media screen and (max-width: 800px) {
     
     main {
-      height:800px;
-      margin:0px;
+
     }
     
     .introduction {
