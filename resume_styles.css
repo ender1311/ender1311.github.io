@@ -13,7 +13,7 @@ p {
 }
 
 #view_window {
-    width: 50%;
+    width: 60%;
     height: 60vh;
     padding: 10px;
     margin: 10px;
@@ -21,10 +21,11 @@ p {
   }
 
 #certificate {
+    width: 60%;
     margin: 10px;
     padding: 10px;
     border: 5px solid black;
-    width: 50%;
+    
     height: auto;
 }
 
@@ -51,10 +52,11 @@ p {
   }
 
 #certificate {
+    width: 90%;
     margin: 10px;
     padding: 10px;
     border: 5px solid black;
-    width: 90%;
+    
     height: auto;
 }
 

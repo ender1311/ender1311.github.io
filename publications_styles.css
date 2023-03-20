@@ -1,20 +1,50 @@
 main {
   display: flex;
   flex-direction: column;
-  align-items: left;
-  margin-left: 5vw;
+  align-items: center;
+  width:100%;
 
+}
+.main-content {
+  width:50vw;
+ 
+}
+h1 {
+  text-align: center;
+  margin-top:40px;
+  margin-bottom: 40px;
+}
+
+.thesis-link {
+  text-align: center;
 }
 
 #blade {
+    
     height: 200px;
-    width: auto;
+    object-fit: contain;
+    width: fit-content;
     border: 5px solid black;
     padding: 10px;
     box-shadow: 5px 5px 10px #555;
-    margin-left: 50px;
+
   }
 
+  .highlights {
+    border-top: 3px solid gray;
+    border-bottom: 3px solid gray;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .highlights p{
+    font-size: 24px;
+  }
+
+  .title-pdf {
+    font-size: 24px;
+  }
 img:hover {
     transform: scale(1.15); /* increases the size of the image by 20% */
     box-shadow: 0 0 10px rgba(34, 249, 0, 0.3); /* increases the shadow size and opacity */
@@ -34,10 +64,7 @@ img:active {
     border: 5px solid black;
   }
 
-  section {
-    max-width: 700px;
-    
-}
+
 
 
 @media screen and (max-width: 750px) {
