@@ -31,7 +31,7 @@
   
   
   main {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Century", Arial, Helvetica, sans-serif;
     font-size: 20px;
     height:90vh;
     width:100%;
@@ -66,8 +66,8 @@
     padding-right: 40px;
     background-color: #edb722;
     border-radius: 20px;
-    background: rgb(154,190,112);
-    background: linear-gradient(0deg, rgba(154,190,112,1) 0%, rgba(253,187,45,1) 100%);
+    background: rgb(254,228,173);
+    background: linear-gradient(0deg, rgba(254,228,173,1) 0%, rgba(253,187,45,1) 100%);
     
     box-shadow: 5px 5px 10px #555;
 
@@ -85,7 +85,7 @@
   .skills_list li {
     margin-top:10px;
     margin-bottom: 20px;
-    color:white;
+    color:black;
     
     font-size: 24px;
     text-align: center;
@@ -125,15 +125,16 @@
   
   
   .button-link {
+    width: 300px;
+
     box-shadow: 5px 5px 10px #555;
 
     display: inline-block;
     background-color: #edb722; /* Change to desired color */
-    background: rgb(154,190,112);
-    background: linear-gradient(0deg, rgba(154,190,112,1) 0%, rgba(253,187,45,1) 100%);
+
 
     color: #fff; /* Change to desired color */
-    padding: 10px 20px; /* Change to desired padding */
+    padding: 20px 30px; /* Change to desired padding */
     text-decoration: none;
     border-radius: 50px; /* Change to desired border radius */
     border: none;
@@ -144,7 +145,7 @@
   
     text-decoration: none;
   
-    font-family: "Garamond";
+    font-family: "Century";
     font-size: 32px;
     color:white;
     font-weight: bold;
@@ -203,7 +204,9 @@
   }
   .skills_list {
     margin-top:100px;
-    width:400px;
+    
+    width:85%;
+
     
     background-color: #edb722;
     border-radius: 20px;
@@ -253,7 +256,7 @@
     display: flex;
     background-color: #edb722; /* Change to desired color */
     color: #fff; /* Change to desired color */
-    padding: 10px 20px; /* Change to desired padding */
+    padding: 20px 30px; /* Change to desired padding */
 
     border-radius: 50px; /* Change to desired border radius */
     border: none;
@@ -264,7 +267,7 @@
   
     text-decoration: none;
   
-    font-family: "Garamond";
+    font-family: "Arial";
     font-size: 28px;
     color:white;
     font-weight: bold;
@@ -273,4 +276,9 @@
   .button-link:hover {
     background-color: #0069d9; /* Change to desired hover color */
   }
+
+  .footer-nav img {
+  display:none;    
+}
+
   }
