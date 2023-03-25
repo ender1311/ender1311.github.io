@@ -15,8 +15,8 @@ main p {
 
 
 .image-grid img {
-  height: 150px;
-  width: 200px;
+  height: 180px;
+  width: 240px;
   object-fit: cover;
   /* border: 3px solid #edb722; */
   
