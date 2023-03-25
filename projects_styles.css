@@ -10,26 +10,27 @@ main p {
   align-items: flex-end;
   align-content: space-around;
   padding:20px;
-  margin:50px;
+  margin:0px;
 }
 
 
 .image-grid img {
-  height: 240px;
-  width: 320px;
+  height: 150px;
+  width: 200px;
   object-fit: cover;
   /* border: 3px solid #edb722; */
   
   border-radius: 50px;
   padding:20px;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
 }
 
 
 
 .project-box {
-  margin:70px;
-  padding:50px;
+  margin: 40px 100px 60px 100px;
+
+  padding:30px;
   border: 3px solid gray;
   border-radius: 50px;
 
@@ -64,7 +65,7 @@ main p {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  /* width:22vw; */
+
 
 }
 .span_button a{
