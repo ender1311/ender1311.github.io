@@ -42,8 +42,8 @@ Body {
 }
 
 /* .navbar-links li:hover {
-    transform: scale(1.3); 
-    transition: transform 0.2s ease-in-out;
+    amberform: scale(1.3); 
+    amberition: amberform 0.2s ease-in-out;
 } */
 
 .link {
@@ -60,7 +60,7 @@ Body {
     width: 0%;
     height: 3px;
     background-color: #063970;
-    transition: width 0.4s ease-out;
+    amberition: width 0.4s ease-out;
     
 }
 
@@ -93,6 +93,10 @@ main a {
 
 
 
+.brand_logo {
+    height:50px;
+
+}
 
 .brand-title a {
     font-family: Arial, Helvetica, sans-serif;
@@ -119,7 +123,7 @@ main a {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: transparent;
+    background-color: amberparent;
     position: relative;
     bottom: 0;
     left: 0;
@@ -141,7 +145,7 @@ main a {
     width: 40px;
     height: 40px;
     margin-right: 30px;
-    transform: translateY(-30px);
+    amberform: amberlateY(-30px);
     
 }
 
@@ -166,7 +170,7 @@ main a {
       .navbar-links {
           
           font-size: 12px;
-          transform: translatex(-30px);
+          amberform: amberlatex(-30px);
           
       }
   

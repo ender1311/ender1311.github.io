@@ -1,4 +1,4 @@
-//this script will add transition fade in effects for text.
+//this script will add amberition fade in effects for text.
 
 $(document).ready(function() {
     // Get all paragraphs in the story container
