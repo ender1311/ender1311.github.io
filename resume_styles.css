@@ -39,6 +39,7 @@ p {
     display: inline-block;
     
     background-color: #edb722; /* Change to desired color */
+    transition: background-color .8s ease; /* Add transition property */
 
 
     color: #fff; /* Change to desired color */
@@ -60,7 +61,6 @@ p {
   }
 
   .button-link:hover {
-    background-color: #0069d9; /* Change to desired hover color */
     background: #0069d9;
   }
 

@@ -29,13 +29,17 @@ h1 {
     box-shadow: 5px 5px 10px #555;
 
   }
-
+.highlights_title {
+  text-align: center;
+  font-weight: bold;
+  text-decoration: underline;
+}
   .highlights {
     border-top: 3px solid gray;
     border-bottom: 3px solid gray;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    margin-top: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 0px;
     margin-bottom: 50px;
   }
   .highlights p{
@@ -46,7 +50,7 @@ h1 {
     font-size: 24px;
   }
 img:hover {
-    amberform: scale(1.15); /* increases the size of the image by 20% */
+    transform: scale(1.15); /* increases the size of the image by 20% */
     box-shadow: 0 0 10px rgba(34, 249, 0, 0.3); /* increases the shadow size and opacity */
   
   } 
@@ -86,7 +90,7 @@ img:active {
     }
   
   img:hover {
-      amberform: scale(1.15); /* increases the size of the image by 20% */
+      transform: scale(1.15); /* increases the size of the image by 20% */
       box-shadow: 0 0 10px rgba(34, 249, 0, 0.3); /* increases the shadow size and opacity */
     
     } 

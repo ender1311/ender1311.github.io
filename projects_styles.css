@@ -46,7 +46,7 @@ main p {
 }
 
 .image-grid img:hover {
-  amberform: scale(1.1); /* increases the size of the image by 20% */
+  transform: scale(1.1); /* increases the size of the image by 20% */
   box-shadow: 5px 5px 10px gray; /* increases the shadow size and opacity */
 
 } 
@@ -145,7 +145,7 @@ main p {
   }
   
   .image-grid img:hover {
-    amberform: scale(1.1); /* increases the size of the image by 20% */
+    transform: scale(1.1); /* increases the size of the image by 20% */
     box-shadow: 5px 5px 10px gray; /* increases the shadow size and opacity */
   
   } 
