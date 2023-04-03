@@ -121,6 +121,7 @@
 
     display: inline-block;
     background-color: #edb722; /* Change to desired color */
+    transition: background-color 0.3s ease; /* Add transition property */
 
 
     color: #fff; /* Change to desired color */

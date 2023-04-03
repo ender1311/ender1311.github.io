@@ -62,6 +62,57 @@ span.highlight {
   }
   
  
+.skill_list_home {
+  font-size:22px;
+  
+}  
+
+.skill_list_home span.highlight_skill {
+  font-weight: bold;
+
+}
+
+.highlight_skill {
+  color: #063970
+}
+
+.button-link {
+  margin:50px;
+  padding: 20px 40px; /* Change to desired padding */
+  box-shadow: 5px 5px 10px #555;
+
+  display: inline-block;
+  
+  
+  background-color: #edb722; /* Change to desired color */
+
+
+  color: #fff; /* Change to desired color */
+  
+  text-decoration: none;
+  border-radius: 50px; /* Change to desired border radius */
+  border: none;
+  cursor: pointer;
+  
+  text-decoration: none;
+
+  font-family: "Arial";
+  font-size: 28px;
+  color:white;
+  font-weight: bold; /* Change to desired font weight */
+  transition: background-color 0.8s ease; /* Add transition property */
+}
+
+.button-link:hover {
+ 
+  background: #0069d9;
+}
+
+#demo_button {
+ margin-left:0px;
+
+}
+
 @media screen and (max-width: 800px) {
     
 
