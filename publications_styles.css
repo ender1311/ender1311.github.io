@@ -46,7 +46,7 @@ h1 {
     font-size: 24px;
   }
 img:hover {
-    transform: scale(1.15); /* increases the size of the image by 20% */
+    amberform: scale(1.15); /* increases the size of the image by 20% */
     box-shadow: 0 0 10px rgba(34, 249, 0, 0.3); /* increases the shadow size and opacity */
   
   } 
@@ -86,7 +86,7 @@ img:active {
     }
   
   img:hover {
-      transform: scale(1.15); /* increases the size of the image by 20% */
+      amberform: scale(1.15); /* increases the size of the image by 20% */
       box-shadow: 0 0 10px rgba(34, 249, 0, 0.3); /* increases the shadow size and opacity */
     
     } 

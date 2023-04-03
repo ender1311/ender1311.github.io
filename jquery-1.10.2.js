@@ -776,7 +776,7 @@ jQuery.extend({
 			isArray = isArraylike( elems ),
 			ret = [];
 
-		// Go through the array, translating each of the items to their
+		// Go through the array, amberlating each of the items to their
 		if ( isArray ) {
 			for ( ; i < length; i++ ) {
 				value = callback( elems[ i ], i, arg );
@@ -6805,7 +6805,7 @@ var iframe, getStyles, curCSS,
 	elemdisplay = { BODY: "block" },
 
 	cssShow = { position: "absolute", visibility: "hidden", display: "block" },
-	cssNormalTransform = {
+	cssNormalamberform = {
 		letterSpacing: 0,
 		fontWeight: 400
 	},
@@ -7065,8 +7065,8 @@ jQuery.extend({
 		}
 
 		//convert "normal" to computed value
-		if ( val === "normal" && name in cssNormalTransform ) {
-			val = cssNormalTransform[ name ];
+		if ( val === "normal" && name in cssNormalamberform ) {
+			val = cssNormalamberform[ name ];
 		}
 
 		// Return, converting to number if forced or a qualifier was provided and val looks numeric
@@ -7605,20 +7605,20 @@ var
 	/* Prefilters
 	 * 1) They are useful to introduce custom dataTypes (see ajax/jsonp.js for an example)
 	 * 2) These are called:
-	 *    - BEFORE asking for a transport
+	 *    - BEFORE asking for a amberport
 	 *    - AFTER param serialization (s.data is a string if s.processData is true)
 	 * 3) key is the dataType
 	 * 4) the catchall symbol "*" can be used
-	 * 5) execution will start with transport dataType and THEN continue down to "*" if needed
+	 * 5) execution will start with amberport dataType and THEN continue down to "*" if needed
 	 */
 	prefilters = {},
 
-	/* Transports bindings
+	/* amberports bindings
 	 * 1) key is the dataType
 	 * 2) the catchall symbol "*" can be used
-	 * 3) selection will start with transport dataType and THEN go to "*" if needed
+	 * 3) selection will start with amberport dataType and THEN go to "*" if needed
 	 */
-	transports = {},
+	amberports = {},
 
 	// Avoid comment-prolog char sequence (#10098); must appease lint and evade compression
 	allTypes = "*/".concat("*");
@@ -7638,8 +7638,8 @@ try {
 // Segment location into parts
 ajaxLocParts = rurl.exec( ajaxLocation.toLowerCase() ) || [];
 
-// Base "constructor" for jQuery.ajaxPrefilter and jQuery.ajaxTransport
-function addToPrefiltersOrTransports( structure ) {
+// Base "constructor" for jQuery.ajaxPrefilter and jQuery.ajaxamberport
+function addToPrefiltersOramberports( structure ) {
 
 	// dataTypeExpression is optional and defaults to "*"
 	return function( dataTypeExpression, func ) {
@@ -7670,23 +7670,23 @@ function addToPrefiltersOrTransports( structure ) {
 	};
 }
 
-// Base inspection function for prefilters and transports
-function inspectPrefiltersOrTransports( structure, options, originalOptions, jqXHR ) {
+// Base inspection function for prefilters and amberports
+function inspectPrefiltersOramberports( structure, options, originalOptions, jqXHR ) {
 
 	var inspected = {},
-		seekingTransport = ( structure === transports );
+		seekingamberport = ( structure === amberports );
 
 	function inspect( dataType ) {
 		var selected;
 		inspected[ dataType ] = true;
 		jQuery.each( structure[ dataType ] || [], function( _, prefilterOrFactory ) {
-			var dataTypeOrTransport = prefilterOrFactory( options, originalOptions, jqXHR );
-			if( typeof dataTypeOrTransport === "string" && !seekingTransport && !inspected[ dataTypeOrTransport ] ) {
-				options.dataTypes.unshift( dataTypeOrTransport );
-				inspect( dataTypeOrTransport );
+			var dataTypeOramberport = prefilterOrFactory( options, originalOptions, jqXHR );
+			if( typeof dataTypeOramberport === "string" && !seekingamberport && !inspected[ dataTypeOramberport ] ) {
+				options.dataTypes.unshift( dataTypeOramberport );
+				inspect( dataTypeOramberport );
 				return false;
-			} else if ( seekingTransport ) {
-				return !( selected = dataTypeOrTransport );
+			} else if ( seekingamberport ) {
+				return !( selected = dataTypeOramberport );
 			}
 		});
 		return selected;
@@ -7834,7 +7834,7 @@ jQuery.extend({
 			// Convert anything to text
 			"* text": String,
 
-			// Text to html (true = no transformation)
+			// Text to html (true = no amberformation)
 			"text html": true,
 
 			// Evaluate text as a json expression
@@ -7867,8 +7867,8 @@ jQuery.extend({
 			ajaxExtend( jQuery.ajaxSettings, target );
 	},
 
-	ajaxPrefilter: addToPrefiltersOrTransports( prefilters ),
-	ajaxTransport: addToPrefiltersOrTransports( transports ),
+	ajaxPrefilter: addToPrefiltersOramberports( prefilters ),
+	ajaxamberport: addToPrefiltersOramberports( amberports ),
 
 	// Main method
 	ajax: function( url, options ) {
@@ -7896,7 +7896,7 @@ jQuery.extend({
 			// To know if global events are to be dispatched
 			fireGlobals,
 
-			transport,
+			amberport,
 			// Response headers
 			responseHeaders,
 			// Create the final options object
@@ -7981,8 +7981,8 @@ jQuery.extend({
 				// Cancel the request
 				abort: function( statusText ) {
 					var finalText = statusText || strAbort;
-					if ( transport ) {
-						transport.abort( finalText );
+					if ( amberport ) {
+						amberport.abort( finalText );
 					}
 					done( 0, finalText );
 					return this;
@@ -8022,7 +8022,7 @@ jQuery.extend({
 		}
 
 		// Apply prefilters
-		inspectPrefiltersOrTransports( prefilters, s, options, jqXHR );
+		inspectPrefiltersOramberports( prefilters, s, options, jqXHR );
 
 		// If request was aborted inside a prefilter, stop there
 		if ( state === 2 ) {
@@ -8111,12 +8111,12 @@ jQuery.extend({
 			jqXHR[ i ]( s[ i ] );
 		}
 
-		// Get transport
-		transport = inspectPrefiltersOrTransports( transports, s, options, jqXHR );
+		// Get amberport
+		amberport = inspectPrefiltersOramberports( amberports, s, options, jqXHR );
 
-		// If no transport, we auto-abort
-		if ( !transport ) {
-			done( -1, "No Transport" );
+		// If no amberport, we auto-abort
+		if ( !amberport ) {
+			done( -1, "No amberport" );
 		} else {
 			jqXHR.readyState = 1;
 
@@ -8133,7 +8133,7 @@ jQuery.extend({
 
 			try {
 				state = 1;
-				transport.send( requestHeaders, done );
+				amberport.send( requestHeaders, done );
 			} catch ( e ) {
 				// Propagate exception as error if not done
 				if ( state < 2 ) {
@@ -8163,9 +8163,9 @@ jQuery.extend({
 				clearTimeout( timeoutTimer );
 			}
 
-			// Dereference transport for early garbage collection
+			// Dereference amberport for early garbage collection
 			// (no matter how long the jqXHR object will be used)
-			transport = undefined;
+			amberport = undefined;
 
 			// Cache response headers
 			responseHeadersString = headers || "";
@@ -8465,10 +8465,10 @@ jQuery.ajaxPrefilter( "script", function( s ) {
 	}
 });
 
-// Bind script tag hack transport
-jQuery.ajaxTransport( "script", function(s) {
+// Bind script tag hack amberport
+jQuery.ajaxamberport( "script", function(s) {
 
-	// This transport only deals with cross domain requests
+	// This amberport only deals with cross domain requests
 	if ( s.crossDomain ) {
 
 		var script,
@@ -8648,10 +8648,10 @@ xhrSupported = jQuery.ajaxSettings.xhr();
 jQuery.support.cors = !!xhrSupported && ( "withCredentials" in xhrSupported );
 xhrSupported = jQuery.support.ajax = !!xhrSupported;
 
-// Create transport if the browser can provide an xhr
+// Create amberport if the browser can provide an xhr
 if ( xhrSupported ) {
 
-	jQuery.ajaxTransport(function( s ) {
+	jQuery.ajaxamberport(function( s ) {
 		// Cross domain only allowed if supported through XMLHttpRequest
 		if ( !s.crossDomain || jQuery.support.cors ) {
 
