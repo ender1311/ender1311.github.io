@@ -98,14 +98,19 @@ span.highlight {
 
   font-family: "Arial";
   font-size: 28px;
-  color:white;
+  color:black;
   font-weight: bold; /* Change to desired font weight */
-  transition: background-color 0.8s ease; /* Add transition property */
+  /* transition: background-color 0.8s ease; */
+  background-image: linear-gradient(to right, #edb722 50%, #0069d9 50%); /* Set gradient background */
+  background-size: 200% 100%; /* Set background size to double the width */
+  transition: background-position 0.3s ease;
+
 }
 
 .button-link:hover {
- 
-  background: #0069d9;
+  background-position: -100% 0; /* Animate background position to create transition effect */
+  color:white;
+  /* background: #0069d9; */
 }
 
 #demo_button {

@@ -56,11 +56,12 @@ p {
   
     font-family: "Arial";
     font-size: 28px;
-    color:white;
+    color:black;
     font-weight: bold;
   }
 
   .button-link:hover {
+    color:white;
     background: #0069d9;
   }
 
