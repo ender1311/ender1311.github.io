@@ -44,35 +44,11 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-
+    
   }
 
 
-  /* .first-row > * {
-    margin-bottom: 100px; 
-  } */
-  
-  /* .first-row > :nth-child(n+4) {
-    margin-top: 100px; 
-  } */
-
-
-  
-  /* .skills_list {
-    margin-top:100px;
-
-    width:400px;
-    padding-right: 40px;
-    background-color: #edb722;
-    border-radius: 20px;
-    background: rgb(254,228,173);
-    background: linear-gradient(0deg, rgba(254,228,173,1) 0%, rgba(253,187,45,1) 100%);
-    
-    box-shadow: 5px 5px 10px #555;
-
-  } */
-
-  #tech_skill_title {
+  .tech_skill_title {
     font-size: 30px;
     font-weight: bold;
     color: black;
@@ -92,10 +68,7 @@
 
   } 
 
-  /* .skills_list:hover {
-    background-color: lightslategray;
-    background: lightslategray;
-  } */
+
   .skills_list_box ul {
     list-style: none;
     
