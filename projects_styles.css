@@ -91,6 +91,46 @@ main p {
   background-color: #edb722; /* Change to desired hover color */
 }
 
+.hire_me {
+  text-align: center;
+}
+
+.hire-button-link {
+  width: 150px; /* Change to desired width */
+  margin: 50px auto; /* Center the button using auto margin */
+
+  padding: 20px 40px; /* Change to desired padding */
+  box-shadow: 5px 5px 10px #555;
+
+  display: inline-block;
+  
+  background-color: #edb722; /* Change to desired color */
+  transition: background-color .8s ease; /* Add transition property */
+
+
+  color: #fff; /* Change to desired color */
+  
+  text-decoration: none;
+  border-radius: 50px; /* Change to desired border radius */
+  border: none;
+  cursor: pointer;
+  
+  font-weight: bold; /* Change to desired font weight */
+  text-align: center;
+
+  text-decoration: none;
+
+  font-family: "Arial";
+  font-size: 28px;
+  color:black;
+  font-weight: bold;
+}
+
+.hire-button-link:hover {
+  color:white;
+  background: #0069d9;
+}
+
 @media screen and (max-width: 800px){
 
   main p {
