@@ -69,7 +69,8 @@ main p {
 
 }
 .span_button a{
-  width: fit-content;
+  
+  width:fit-content
   width: -moz-fit-content;
 }
 
