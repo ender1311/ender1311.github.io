@@ -160,6 +160,13 @@
   .contact .c-actions{display:flex; gap:16px; margin-top:28px; flex-wrap:wrap}
   @media(max-width:980px){.contact{flex-direction:column; gap:30px} .contact .word{writing-mode:horizontal-tb; transform:none}}
 
+  /* ABOUT */
+  .about-wrap{max-width:840px; margin:0 auto}
+  .about-wrap .num{font-family:var(--pop); font-weight:700; font-size:20px; margin-bottom:18px}
+  .about-wrap .num .s{color:var(--secondary); margin-right:10px}
+  .about-wrap h2{font-family:var(--pop); font-weight:600; font-size:clamp(1.9rem,4vw,2.9rem); letter-spacing:-.01em; margin-bottom:26px}
+  .about-wrap p{font-family:var(--inter); color:var(--cfgray); font-size:clamp(1.05rem,1.6vw,1.4rem); line-height:1.8}
+
   @media(prefers-reduced-motion:reduce){*{animation-duration:.001s!important} .reveal,.hero .quote .w{opacity:1!important;transform:none!important;filter:none!important}}
 </style>
 </head>
@@ -173,11 +180,13 @@
     <a href="#contact">CONTACT</a>
     <a href="#experience">EXPERIENCE</a>
     <a href="#project1">PROJECTS</a>
+    <a href="#about">ABOUT</a>
   </div>
 </nav>
 <nav class="mnav">
   <a href="#home" class="logo">D<b>.</b>L</a>
   <div class="mlinks">
+    <a href="#about">ABOUT</a>
     <a href="#project1">PROJECTS</a>
     <a href="#experience">EXPERIENCE</a>
     <a href="#contact">CONTACT</a>
@@ -209,6 +218,15 @@
     <div class="role" id="role"><span class="sw"></span></div>
     <div class="quote" id="quote">"I build AI tools that change how teams work — replacing manual, engineer-dependent work with self-service systems teams run on their own."</div>
     <div class="slider"><div class="track" id="track"></div></div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="screen" id="about">
+  <div class="about-wrap reveal">
+    <div class="num"><span class="s">//</span><span class="n">about</span></div>
+    <h2>Some background on me.</h2>
+    <p>I'm the marketing-technology and AI developer at <strong>YouVersion</strong> (the Bible App, <strong>1 billion+ installs</strong>). When we started wondering what AI could actually do for our marketing, I didn't wait for a mandate — I just started building, ran up a real token bill exploring what was possible, and <strong>shipped two production systems on my own</strong>. One picks the best message for each user with <strong>bandit ML algorithms</strong> (Next.js + TypeScript); the other lets non-technical marketers launch localized campaigns across <strong>70+ languages</strong>. The work contributed to a <strong>20% increase in daily active users</strong> and a <strong>200% increase in monthly revenue</strong>. I'm now the <strong>tech lead on a half-dozen web apps</strong> for our organization.</p>
   </div>
 </section>
 
