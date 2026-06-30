@@ -132,6 +132,17 @@
   .tl p{font-family:var(--inter); color:var(--cfgray); margin-top:12px; line-height:1.7; font-size:15px}
   @media(max-width:640px){.timeline{margin-left:10px; padding-left:30px} .tl .yr{position:static; width:auto; text-align:left; margin-bottom:6px} .tl .dot{left:-39px}}
 
+  /* LIFE */
+  .life{width:100%; max-width:1000px; margin:0 auto; display:flex; flex-direction:column; gap:40px}
+  .life-head{max-width:62ch}
+  .life-head h2{font-family:var(--pop); font-weight:600; font-size:clamp(2rem,4vw,3rem); margin-top:14px}
+  .life-head p{font-family:var(--inter); color:var(--cfgray); margin-top:16px; line-height:1.7; font-size:clamp(1rem,1.4vw,1.2rem)}
+  .life-photos{display:grid; grid-template-columns:1fr 1fr; gap:24px}
+  .life-photos figure{margin:0}
+  .life-photos img{width:100%; aspect-ratio:4/3; object-fit:cover; border-radius:14px; border:1px solid var(--line); box-shadow:0 30px 60px -30px rgba(0,0,0,.5)}
+  .life-photos figcaption{font-family:var(--inter); font-size:13px; color:var(--cfgray); margin-top:10px; opacity:.8}
+  @media(max-width:760px){.life-photos{grid-template-columns:1fr}}
+
   /* CONTACT */
   .contact{display:flex; align-items:center; justify-content:center; gap:60px; width:100%}
   .contact .word{writing-mode:vertical-rl; transform:rotate(180deg); font-family:var(--pop); font-style:italic; font-weight:700; font-size:clamp(3rem,7vw,5.5rem); color:var(--header); letter-spacing:-.02em}
@@ -285,6 +296,21 @@
         <div class="org">The Ohio State University</div>
         <p>Bachelor's in aerospace engineering.</p>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- LIFE -->
+<section class="screen" id="life">
+  <div class="life reveal">
+    <div class="life-head">
+      <div class="num"><span class="s">//</span><span class="n">off the clock</span></div>
+      <h2>The best system I'm part of.</h2>
+      <p>Seven years married to Maggie, dad to four. The systems I care about most don't run in production — they're at home. Same principles, though: show up every day, build for the long run, and sweat the details no one else sees.</p>
+    </div>
+    <div class="life-photos">
+      <figure><img src="./story/couple.jpg" alt="Dan and Maggie" loading="lazy"><figcaption>Date day, a few thousand feet up.</figcaption></figure>
+      <figure><img src="./story/family.jpg" alt="The Luk family — Dan, Maggie, and their four kids" loading="lazy"><figcaption>Seven years in, four kids — newest to the crew.</figcaption></figure>
     </div>
   </div>
 </section>
