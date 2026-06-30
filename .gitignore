@@ -3,3 +3,4 @@ temp.html
 /files/Resume/*
 
 .env
+.vercel
