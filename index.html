@@ -1,48 +1,339 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <script src="./jquery-3.6.0.min.js"></script>
-      
-      <link rel="stylesheet" href="./styles.css">
-      <link rel="icon" href="./files/radtek_logo_amber.png" type="image/png">
-      <script src="./script.js" defer></script>
-      <title>Dan Luk portfolio</title>
-    </head>
-    <body>
-      <header>
-        <!--Navigation bar-->
-        <div id="nav-placeholder">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dan Luk — AI-Native Builder & Enabler</title>
+<meta name="description" content="Dan Luk — AI-native builder and enabler working at the marketing × engineering seam. Architect of Nexus and Beacon at YouVersion (700M+ installs). Selected work, experience, and contact.">
+<meta property="og:title" content="Dan Luk — AI-Native Builder & Enabler">
+<meta property="og:description" content="Building AI tools that change how non-technical teams work. Architect of Nexus & Beacon at YouVersion.">
+<meta property="og:type" content="website">
+<link rel="icon" href="./files/radtek_logo_amber.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Hanken+Grotesk:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0c0b0a; --bg-2:#131110; --panel:#16130f;
+    --text:#f4efe6; --muted:#9a9286; --faint:#6b645a;
+    --line:#272320; --line-2:#332e28;
+    --accent:#ff7a1a; --accent-soft:#ffb066;
+    --maxw:1180px;
+    --display:'Fraunces',Georgia,serif;
+    --sans:'Hanken Grotesk',-apple-system,sans-serif;
+    --mono:'JetBrains Mono',ui-monospace,monospace;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{background:var(--bg); color:var(--text); font-family:var(--sans); font-size:17px; line-height:1.6; -webkit-font-smoothing:antialiased; overflow-x:hidden}
+  body::before{content:""; position:fixed; inset:0; z-index:0; pointer-events:none;
+    background:radial-gradient(120% 80% at 80% -10%, rgba(255,122,26,.10), transparent 55%), radial-gradient(90% 70% at -10% 110%, rgba(255,122,26,.05), transparent 50%)}
+  body::after{content:""; position:fixed; inset:0; z-index:0; pointer-events:none; opacity:.04;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+  .wrap{position:relative; z-index:1; max-width:var(--maxw); margin:0 auto; padding:0 28px}
+  a{color:inherit; text-decoration:none}
+  ::selection{background:var(--accent); color:#0c0b0a}
 
-        </div>
+  nav{position:sticky; top:0; z-index:50; backdrop-filter:blur(10px); background:linear-gradient(var(--bg), rgba(12,11,10,.72)); border-bottom:1px solid var(--line)}
+  .nav-in{display:flex; align-items:center; justify-content:space-between; height:68px}
+  .brand{font-family:var(--display); font-size:21px; font-weight:600; letter-spacing:-.01em}
+  .brand b{color:var(--accent)}
+  .nav-links{display:flex; gap:28px; align-items:center}
+  .nav-links a{color:var(--muted); font-size:14px; transition:color .25s}
+  .nav-links a:hover{color:var(--text)}
+  .nav-cta{color:var(--text)!important; border:1px solid var(--line-2); padding:8px 16px; border-radius:999px; transition:.25s}
+  .nav-cta:hover{border-color:var(--accent); color:var(--accent)!important}
+  @media(max-width:680px){.nav-links a:not(.nav-cta){display:none}}
 
-        <script>
-        $(function(){
-        $("#nav-placeholder").load("navbar.html");
-        });
-        </script>
+  header{padding:104px 0 60px}
+  .eyebrow{font-family:var(--mono); color:var(--accent); font-size:13px; letter-spacing:.2em; text-transform:uppercase; display:flex; align-items:center; gap:14px; flex-wrap:wrap}
+  .eyebrow::before{content:""; width:42px; height:1px; background:var(--accent)}
+  h1{font-family:var(--display); font-weight:400; font-size:clamp(2.6rem,6.4vw,5rem); line-height:1.05; letter-spacing:-.025em; margin:30px 0 0; max-width:18ch}
+  h1 em{font-style:italic; color:var(--accent-soft)}
+  .lede{margin-top:28px; max-width:60ch; color:var(--muted); font-size:clamp(1rem,1.5vw,1.2rem); line-height:1.65}
+  .lede b{color:var(--text); font-weight:500}
+  .hero-meta{margin-top:38px; display:flex; flex-wrap:wrap; gap:14px 26px; align-items:center; font-family:var(--mono); font-size:13px; color:var(--faint)}
+  .hero-meta a{color:var(--muted); border-bottom:1px solid var(--line-2); padding-bottom:2px; transition:.25s}
+  .hero-meta a:hover{color:var(--accent); border-color:var(--accent)}
+  .dot{width:7px; height:7px; border-radius:50%; background:var(--accent); box-shadow:0 0 0 4px rgba(255,122,26,.15); display:inline-block}
 
-    <!--end of Navigation bar-->
-      </header>
-      <main>
-      <meta http-equiv="refresh" content="0; url=./home.html">
-      </main>
+  /* stats */
+  .stats{border-top:1px solid var(--line); border-bottom:1px solid var(--line); margin-top:64px}
+  .stats-in{display:grid; grid-template-columns:repeat(4,1fr)}
+  .stat{padding:30px 24px; border-left:1px solid var(--line)}
+  .stat:first-child{border-left:none; padding-left:0}
+  .stat .n{font-family:var(--display); font-size:clamp(1.7rem,3.4vw,2.6rem); font-weight:500; letter-spacing:-.02em; color:var(--text)}
+  .stat .n span{color:var(--accent)}
+  .stat .l{font-family:var(--mono); font-size:11.5px; letter-spacing:.04em; color:var(--muted); margin-top:8px; line-height:1.5}
+  @media(max-width:760px){.stats-in{grid-template-columns:1fr 1fr}.stat:nth-child(3){border-left:none;padding-left:0}.stat{border-top:1px solid var(--line)}.stat:first-child,.stat:nth-child(2){border-top:none}}
 
-      <footer>
-        <!--Navigation bar-->
-        <div id="footer-placeholder">
+  .sec{padding:84px 0}
+  .sec-head{display:flex; align-items:baseline; justify-content:space-between; gap:20px; margin-bottom:48px; border-top:1px solid var(--line); padding-top:22px}
+  .sec-head h2{font-family:var(--display); font-weight:500; font-size:clamp(1.5rem,3vw,2.1rem); letter-spacing:-.02em}
+  .sec-head .count{font-family:var(--mono); color:var(--faint); font-size:13px}
 
-        </div>
+  /* experience */
+  .xp{display:grid; grid-template-columns:230px 1fr; gap:34px; padding:34px 0; border-top:1px solid var(--line)}
+  .xp .meta .role{font-family:var(--display); font-size:1.25rem; font-weight:500; line-height:1.2}
+  .xp .meta .org{color:var(--accent); font-size:14.5px; margin-top:6px}
+  .xp .meta .when{font-family:var(--mono); font-size:12px; color:var(--faint); margin-top:8px; letter-spacing:.03em}
+  .xp .meta .loc{font-family:var(--mono); font-size:12px; color:var(--faint); margin-top:2px}
+  .xp .summary{color:#cfc8bc; font-style:italic; margin-bottom:18px; max-width:62ch}
+  .xp ul{list-style:none; display:grid; gap:14px}
+  .xp li{position:relative; padding-left:22px; color:#cfc8bc; font-size:15.5px; line-height:1.6; max-width:64ch}
+  .xp li::before{content:""; position:absolute; left:0; top:11px; width:7px; height:7px; border-radius:2px; background:var(--accent); transform:rotate(45deg)}
+  .xp li b{color:var(--text); font-weight:600}
+  @media(max-width:760px){.xp{grid-template-columns:1fr; gap:18px}}
 
-        <script>
-        $(function(){
-        $("#footer-placeholder").load("footer.html");
-        });
-        </script>
+  /* projects */
+  .proj{display:grid; grid-template-columns:74px 1fr auto; gap:28px; padding:34px 0; border-top:1px solid var(--line)}
+  .js .proj{opacity:0; transform:translateY(24px); transition:opacity .7s ease, transform .7s ease}
+  .js .proj.in{opacity:1; transform:none}
+  @media(prefers-reduced-motion:reduce){.js .proj,.reveal{opacity:1!important; transform:none!important; transition:none!important}}
+  .proj:last-child{border-bottom:1px solid var(--line)}
+  .proj .idx{font-family:var(--display); font-size:1.4rem; color:var(--faint); transition:color .3s}
+  .proj:hover .idx{color:var(--accent)}
+  .proj .cat{font-family:var(--mono); font-size:11px; letter-spacing:.14em; text-transform:uppercase; color:var(--accent); margin-bottom:11px}
+  .proj h3{font-family:var(--display); font-weight:500; font-size:clamp(1.5rem,2.8vw,2rem); letter-spacing:-.02em; line-height:1.1}
+  .proj h3 .tag{display:block; font-family:var(--sans); font-size:.98rem; font-weight:400; color:var(--muted); letter-spacing:0; margin-top:8px}
+  .proj p{margin-top:15px; max-width:62ch; color:#cfc8bc; font-size:15px; line-height:1.65}
+  .proj p b{color:var(--text); font-weight:600}
+  .stack{margin-top:17px; display:flex; flex-wrap:wrap; gap:8px}
+  .stack span{font-family:var(--mono); font-size:11.5px; color:var(--muted); border:1px solid var(--line-2); padding:5px 10px; border-radius:6px; background:var(--bg-2)}
+  .links{display:flex; flex-direction:column; gap:10px; align-items:flex-end; min-width:118px}
+  .btn{font-family:var(--mono); font-size:12.5px; letter-spacing:.02em; padding:9px 15px; border-radius:8px; border:1px solid var(--line-2); white-space:nowrap; transition:.22s; display:inline-flex; gap:8px; align-items:center}
+  .btn .ar{transition:transform .22s}
+  .btn:hover .ar{transform:translate(2px,-2px)}
+  .btn.code:hover{border-color:var(--text); color:var(--text)}
+  .btn.live{background:var(--accent); color:#0c0b0a; border-color:var(--accent); font-weight:500}
+  .btn.live:hover{background:var(--accent-soft); border-color:var(--accent-soft)}
+  @media(max-width:820px){.proj{grid-template-columns:1fr; gap:14px}.proj .idx{font-size:1.05rem}.links{flex-direction:row; align-items:flex-start; margin-top:8px}}
 
-    <!--end of Navigation bar-->
-      </footer>
-    </body>
+  /* skills */
+  .skills{display:grid; grid-template-columns:repeat(2,1fr); gap:30px 56px}
+  .skillgrp h4{font-family:var(--mono); font-size:11px; letter-spacing:.16em; text-transform:uppercase; color:var(--accent); margin-bottom:12px; display:flex; align-items:center; gap:10px}
+  .skillgrp h4::before{content:""; width:18px; height:1px; background:var(--accent)}
+  .skillgrp .row{color:#cfc8bc; font-size:15px; line-height:1.85}
+  @media(max-width:680px){.skills{grid-template-columns:1fr; gap:26px}}
+
+  /* about + education */
+  .about{display:grid; grid-template-columns:1.5fr 1fr; gap:56px; align-items:start}
+  .about p{color:#cfc8bc; max-width:58ch; margin-bottom:18px}
+  .about p b{color:var(--text); font-weight:500}
+  .portrait{width:100%; aspect-ratio:4/5; object-fit:cover; border:1px solid var(--line-2); border-radius:12px; filter:grayscale(.15) contrast(1.02)}
+  .edu{margin-top:26px}
+  .edu .e{padding:14px 0; border-top:1px solid var(--line)}
+  .edu .e .d{font-family:var(--display); font-size:1.05rem}
+  .edu .e .s{font-size:13.5px; color:var(--muted); margin-top:3px}
+  .edu .e .y{font-family:var(--mono); font-size:12px; color:var(--faint); margin-top:3px}
+  @media(max-width:820px){.about{grid-template-columns:1fr; gap:34px}}
+
+  footer{border-top:1px solid var(--line); padding:92px 0 56px; margin-top:24px}
+  .foot-cta{font-family:var(--display); font-weight:400; font-size:clamp(2rem,5.2vw,3.5rem); letter-spacing:-.025em; line-height:1.1; max-width:18ch}
+  .foot-cta a{border-bottom:2px solid var(--accent); transition:.25s}
+  .foot-cta a:hover{color:var(--accent)}
+  .foot-row{margin-top:46px; display:flex; flex-wrap:wrap; justify-content:space-between; gap:18px; align-items:center; font-family:var(--mono); font-size:13px; color:var(--faint)}
+  .foot-row a{color:var(--muted); transition:.25s} .foot-row a:hover{color:var(--accent)}
+  .foot-links{display:flex; gap:22px; flex-wrap:wrap}
+</style>
+<script>document.documentElement.className+=' js';</script>
+</head>
+<body>
+
+<nav>
+  <div class="wrap nav-in">
+    <a href="#top" class="brand">Dan<b>.</b>Luk</a>
+    <div class="nav-links">
+      <a href="#work">Work</a>
+      <a href="#experience">Experience</a>
+      <a href="#about">About</a>
+      <a href="./Dan_Luk_Resume.pdf" target="_blank" rel="noopener">Résumé</a>
+      <a href="mailto:danluk1311@gmail.com" class="nav-cta">Get in touch</a>
+    </div>
+  </div>
+</nav>
+
+<div id="top"></div>
+
+<header>
+  <div class="wrap">
+    <div class="eyebrow reveal">AI-Native Builder &amp; Enabler · Marketing × Engineering</div>
+    <h1 class="reveal">I build <em>AI tools</em> that change how non-technical teams work.</h1>
+    <p class="lede reveal">At <b>YouVersion</b> (700M+ installs) I work at the marketing–engineering seam — replacing manual, engineer-dependent campaign building with <b>self-service AI systems marketers run on their own</b>. I architect agentic platforms, write ML from scratch, and turn one-off solutions into reusable systems. Bias to action: a working proof-of-concept now beats a roadmap for next quarter.</p>
+    <div class="hero-meta reveal">
+      <span><span class="dot"></span> Open to Staff / Senior roles</span>
+      <span>Edmond, OK</span>
+      <a href="https://github.com/ender1311" target="_blank" rel="noopener">github.com/ender1311</a>
+      <a href="mailto:danluk1311@gmail.com">danluk1311@gmail.com</a>
+      <a href="./Dan_Luk_Resume.pdf" target="_blank" rel="noopener">Résumé ↓</a>
+    </div>
+  </div>
+</header>
+
+<section class="stats">
+  <div class="wrap stats-in">
+    <div class="stat"><div class="n">700M<span>+</span></div><div class="l">product installs<br>(YouVersion)</div></div>
+    <div class="stat"><div class="n">50M<span>+</span></div><div class="l">users personalized<br>in real time</div></div>
+    <div class="stat"><div class="n">200<span>%</span></div><div class="l">monthly campaign<br>revenue increase</div></div>
+    <div class="stat"><div class="n">70<span>+</span></div><div class="l">languages of<br>automated creative</div></div>
+  </div>
+</section>
+
+<main class="wrap sec" id="work">
+  <div class="sec-head"><h2>Selected Work</h2><span class="count">production systems</span></div>
+
+  <article class="proj">
+    <div class="idx">01</div>
+    <div class="body">
+      <div class="cat">AI · Agentic Decisioning</div>
+      <h3>Nexus<span class="tag">An AI orchestration engine that decides for itself.</span></h3>
+      <p>An agentic personalization engine that autonomously chooses <b>what, when, and how to message each of 50M+ users in real time</b> — replacing manual campaign management with AI-driven decisioning. I built the ML from scratch in TypeScript — <b>Thompson Sampling, LinUCB, and HDBSCAN persona clustering</b> — with a reward loop that learns from live engagement.</p>
+      <div class="stack"><span>TypeScript</span><span>Next.js 16</span><span>From-scratch ML</span><span>Prisma</span><span>Neon Postgres</span><span>WorkOS</span><span>Hightouch</span></div>
+    </div>
+    <div class="links"><a class="btn code" href="https://github.com/ender1311/nexusAi" target="_blank" rel="noopener">Code <span class="ar">↗</span></a></div>
+  </article>
+
+  <article class="proj">
+    <div class="idx">02</div>
+    <div class="body">
+      <div class="cat">Platform · Self-Service AI</div>
+      <h3>Beacon<span class="tag">Marketers launch what used to require an engineer.</span></h3>
+      <p>A self-service AI platform that lets non-technical marketers <b>design, configure, and launch complex cross-channel campaigns themselves</b> — moving the team from engineer-dependence to self-sufficiency. Built on reusable foundations: a 24-component creative schema and a 17-handler workflow registry, with a governed Draft → Approved → Sent flow and Braze, Crowdin, WordPress, Wrike, and Teams integrations.</p>
+      <div class="stack"><span>Next.js 16</span><span>React 19</span><span>Drizzle ORM</span><span>Postgres</span><span>Braze</span><span>Crowdin</span></div>
+    </div>
+    <div class="links"><a class="btn code" href="https://github.com/ender1311/beacon" target="_blank" rel="noopener">Code <span class="ar">↗</span></a></div>
+  </article>
+
+  <article class="proj">
+    <div class="idx">03</div>
+    <div class="body">
+      <div class="cat">Media · Client-Side Rendering</div>
+      <h3>VerseCut<span class="tag">Video &amp; image ads rendered entirely in the browser.</span></h3>
+      <p>Turns a single reference into a polished image or video ad — composited, captioned, and voiced <b>without a server render farm</b>. Rendering runs client-side via FFmpeg compiled to WebAssembly with on-device text-to-speech, keeping cost and infrastructure near zero while staying fully interactive.</p>
+      <div class="stack"><span>Next.js 16</span><span>React 19</span><span>FFmpeg (WASM)</span><span>Kokoro TTS</span><span>Prisma</span><span>Vercel Blob</span></div>
+    </div>
+    <div class="links"><a class="btn code" href="https://github.com/ender1311/versecut" target="_blank" rel="noopener">Code <span class="ar">↗</span></a></div>
+  </article>
+
+  <article class="proj">
+    <div class="idx">04</div>
+    <div class="body">
+      <div class="cat">Tooling · Distribution</div>
+      <h3>Wayfinder<span class="tag">Deep links and QR codes for content distribution.</span></h3>
+      <p>Generates deep links and QR codes that route people to the right content across platforms — built so marketing and growth teams can spin up, manage, and track campaign links from a single, fast interface.</p>
+      <div class="stack"><span>Next.js 16</span><span>React 19</span><span>TypeScript</span><span>Postgres</span></div>
+    </div>
+    <div class="links"><a class="btn code" href="https://github.com/ender1311/wayfinder" target="_blank" rel="noopener">Code <span class="ar">↗</span></a></div>
+  </article>
+
+  <article class="proj">
+    <div class="idx">05</div>
+    <div class="body">
+      <div class="cat">Pipeline · Build Dashboard</div>
+      <h3>Captured<span class="tag">Capture, parse, and manage site builds.</span></h3>
+      <p>A build dashboard and ingestion pipeline for capturing and structuring sites — a wizard-driven flow that scrapes, parses, and tracks builds end-to-end, with authentication and a clean operator view over the whole process.</p>
+      <div class="stack"><span>Next.js</span><span>React</span><span>NextAuth</span><span>Drizzle ORM</span><span>Neon Postgres</span></div>
+    </div>
+    <div class="links"><a class="btn code" href="https://github.com/ender1311/captured" target="_blank" rel="noopener">Code <span class="ar">↗</span></a></div>
+  </article>
+</main>
+
+<section class="wrap sec" id="experience">
+  <div class="sec-head"><h2>Experience</h2><span class="count">engineer · marketer · AI practitioner</span></div>
+
+  <div class="xp">
+    <div class="meta">
+      <div class="role">Marketing Technology &amp; AI Product Developer</div>
+      <div class="org">YouVersion · Life.Church</div>
+      <div class="when">Jun 2023 — Present</div>
+      <div class="loc">Edmond, OK</div>
+    </div>
+    <div>
+      <p class="summary">The AI builder-and-enabler for marketing teams on a 700M+ install product — shipping AI tools and agents alongside non-technical marketers and reshaping how they work day to day.</p>
+      <ul>
+        <li><b>Built an AI orchestration engine that decides for itself.</b> Architected Nexus, an agentic personalization engine that autonomously chooses what, when, and how to message each of 50M+ users in real time — with ML built from scratch (Thompson Sampling, LinUCB, HDBSCAN) and a live-engagement reward loop.</li>
+        <li><b>Changed how non-technical marketers work.</b> Built Beacon, a self-service AI platform that lets marketers launch complex cross-channel campaigns themselves — work that used to require an engineer.</li>
+        <li><b>Compressed multi-day work to minutes.</b> Shipped an LLM workflow that turns a campaign brief into launch-ready, localized creative across 70+ languages (PDF brief → Claude → multi-locale output).</li>
+        <li><b>Turned one-off tools into reusable systems.</b> Designed a 24-component creative schema and a 17-handler workflow registry so a tool built once serves the whole team.</li>
+        <li><b>Operated as a one-person platform team.</b> Used AI leverage — Claude and Claude Code daily, agentic multi-step workflows — to ship and run two production systems.</li>
+        <li><b>Drove measurable impact.</b> AI automation and experimentation contributed to a <b>200% increase in monthly campaign revenue</b>.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="xp">
+    <div class="meta">
+      <div class="role">Software Engineer</div>
+      <div class="org">Technology Service Corporation (TSC)</div>
+      <div class="when">Apr — Jun 2023</div>
+      <div class="loc">Bloomington, IN</div>
+    </div>
+    <div>
+      <ul>
+        <li>Delivered <b>architecture design, system integration, and code automation</b> for DoD programs (High Voltage Detonator and Battery systems).</li>
+        <li>Diagnostic problem-solving in mission-critical, cross-functional hardware environments.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="wrap sec" id="skills">
+  <div class="sec-head"><h2>What I Bring</h2><span class="count">capabilities</span></div>
+  <div class="skills">
+    <div class="skillgrp"><h4>AI Building &amp; Agents</h4><div class="row">Claude (Anthropic API) · Claude Code · agentic &amp; multi-step workflow design · LLM tool/agent building · Vercel AI SDK · generateObject() · prompt engineering · RAG · custom TypeScript / Python pipelines</div></div>
+    <div class="skillgrp"><h4>Enablement &amp; Communication</h4><div class="row">Self-service tooling for non-technical teams · technical-to-business translation · cross-functional partnership (marketing, UX, data) · documentation &amp; reusable playbooks</div></div>
+    <div class="skillgrp"><h4>Marketing &amp; MarTech</h4><div class="row">Braze (Canvas, API, Liquid, lifecycle) · Hightouch CDP · campaign orchestration · audience segmentation · A/B experimentation · analytics</div></div>
+    <div class="skillgrp"><h4>Engineering</h4><div class="row">TypeScript · JavaScript · Python · SQL · React · Next.js · Node.js · REST APIs · PostgreSQL · from-scratch ML (Thompson Sampling, LinUCB, HDBSCAN)</div></div>
+    <div class="skillgrp"><h4>Ways of Working</h4><div class="row">Bias to action &amp; rapid prototyping · systems thinking &amp; reusable patterns · multiple concurrent workstreams · self-directed in ambiguity</div></div>
+  </div>
+</section>
+
+<section class="wrap sec" id="about">
+  <div class="sec-head"><h2>About</h2><span class="count">builder · enabler</span></div>
+  <div class="about">
+    <div>
+      <p>I'm equal parts <b>engineer, marketer, and AI practitioner</b>. I sit at the layer between engineering and marketing — turning AI capability into guidance teammates can actually act on, and turning manual, engineer-dependent processes into self-service systems they own.</p>
+      <p>I treat AI as a <b>default operating mode</b>: I build with Claude and Claude Code daily, design agentic multi-step workflows, and use that leverage to ship like a platform team of one. I care most about <b>systems thinking</b> — building a thing once so it serves everyone — and about shipping working software over slideware.</p>
+      <p>Before software I trained as an <b>aerospace engineer</b>, which still shapes how I approach hard, ambiguous systems. I'm now looking for <b>staff / senior roles</b> where I can own meaningful surface area and raise the bar for the teams around me.</p>
+      <div class="edu">
+        <div class="e"><div class="d">M.S.E., Aeronautical &amp; Aerospace Engineering</div><div class="s">The Ohio State University</div><div class="y">Dec 2008</div></div>
+        <div class="e"><div class="d">B.S.E., Aeronautical &amp; Aerospace Engineering</div><div class="s">The Ohio State University</div><div class="y">May 2006</div></div>
+      </div>
+    </div>
+    <div>
+      <img class="portrait" src="./dan_white.JPG" alt="Dan Luk">
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-cta">Let's build something — <a href="mailto:danluk1311@gmail.com">say hello</a>.</div>
+    <div class="foot-row">
+      <span>© <span id="yr"></span> Dan Luk · Edmond, OK</span>
+      <div class="foot-links">
+        <a href="https://github.com/ender1311" target="_blank" rel="noopener">GitHub ↗</a>
+        <a href="mailto:danluk1311@gmail.com">Email ↗</a>
+        <a href="tel:+16145468412">(614) 546-8412</a>
+        <a href="./Dan_Luk_Resume.pdf" target="_blank" rel="noopener">Résumé ↓</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('yr').textContent=new Date().getFullYear();
+  document.querySelectorAll('.reveal').forEach(function(el,i){
+    el.style.opacity=0; el.style.transform='translateY(20px)';
+    el.style.transition='opacity .7s ease '+(i*0.09)+'s, transform .7s ease '+(i*0.09)+'s';
+    requestAnimationFrame(function(){requestAnimationFrame(function(){el.style.opacity=1; el.style.transform='none';});});
+  });
+  var rows=document.querySelectorAll('.proj');
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in'); io.unobserve(e.target);}});},{threshold:.15, rootMargin:'0px 0px -8% 0px'});
+    rows.forEach(function(p){io.observe(p);});
+    window.addEventListener('load',function(){setTimeout(function(){rows.forEach(function(p){p.classList.add('in');});},1500);});
+  } else { rows.forEach(function(p){p.classList.add('in');}); }
+</script>
+</body>
 </html>
