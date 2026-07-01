@@ -18,7 +18,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;700&family=Anonymous+Pro:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 <script>
   (function(){ try{
-    var c = localStorage.getItem('theme') || 'system';
+    var c = localStorage.getItem('theme') || 'dark';
     var sysDark = matchMedia('(prefers-color-scheme: dark)').matches;
     document.documentElement.className = c === 'system' ? (sysDark ? 'dark' : 'light') : c;
     document.documentElement.setAttribute('data-theme-choice', c);
@@ -214,7 +214,7 @@
   <div>
     <div class="name" id="nm">DAN LUK</div>
     <div class="role" id="role"><span class="sw"></span></div>
-    <div class="quote" id="quote">"I build AI tools that change how teams work — replacing slow, engineer-dependent processes with self-service systems anyone on the team can run."</div>
+    <div class="quote" id="quote">"I build AI products end to end — the decisioning engine, the interface, and everything in between — and ship them to real users fast."</div>
     <div class="slider"><div class="track" id="track"></div></div>
   </div>
 </section>
@@ -224,7 +224,7 @@
   <div class="about-wrap reveal">
     <div class="num"><span class="s">//</span><span class="n">about</span></div>
     <h2>Some background on me.</h2>
-    <p>I'm the marketing-technology and AI developer at <strong>YouVersion</strong> (the Bible App, <strong>1 billion+ installs</strong>). When we started wondering what AI could actually do for our marketing, I didn't wait for a mandate — I just started building, ran up a real token bill exploring what was possible, and <strong>shipped two production systems on my own</strong>. One picks the best message for each user with <strong>bandit ML algorithms</strong> (Next.js + TypeScript); the other lets non-technical marketers launch localized campaigns across <strong>70+ languages</strong>. The work contributed to a <strong>20% increase in daily active users</strong> and a <strong>200% increase in monthly revenue</strong>. I'm now the <strong>tech lead on a half-dozen web apps</strong> for our organization.</p>
+    <p>I'm the marketing-technology and AI developer at <strong>YouVersion</strong> (the Bible App, <strong>1 billion+ installs</strong>). When we started wondering what AI could actually do for our marketing, I didn't wait for a mandate — I just started building, ran up a real token bill exploring what was possible, and <strong>shipped two production systems (Next.js + TypeScript) on my own</strong>. One picks the best message for each user with <strong>bandit ML algorithms.</strong> The other lets anyone launch localized campaigns across <strong>70+ languages</strong>. The work contributed to a <strong>20% increase in daily active users</strong> and a <strong>200% increase in monthly revenue</strong>. I'm now the <strong>tech lead on our marketing apps</strong>.
   </div>
 </section>
 
@@ -234,8 +234,9 @@
     <div class="info">
       <div class="num"><span class="s">//</span><span class="n">01</span></div>
       <h3><img class="ic" src="./icons/nexus.png" alt="Nexus icon" loading="lazy">Nexus</h3>
-      <div class="desc">An agentic personalization engine that autonomously chooses what, when, and how to message each of <strong>50M+ users in real time</strong>. The ML is built from scratch in TypeScript — Thompson Sampling, LinUCB, and HDBSCAN persona clustering — with a reward loop that learns from live engagement.</div>
-      <div class="pills"><span class="pill" style="color:#60a5fa">TypeScript</span><span class="pill" style="color:#a5b4fc">Next.js</span><span class="pill" style="color:#f472b6">From-scratch ML</span><span class="pill" style="color:#34d399">Prisma</span><span class="pill" style="color:#f9a8d4">Postgres</span></div>
+      <div class="desc">Personalization at scale was a pipedream. The best anyone could do was slice users into broad audiences — and even that meant creatives and developers hand-building every campaign from scratch. Nexus turns it into an <strong>automated system</strong> where marketers define the goals and variants, and a from-scratch ML engine (Thompson Sampling and LinUCB bandits, HDBSCAN persona clustering) autonomously decides what, when, and how to message each of 50M+ users, <strong>learning continuously from real engagement.</strong> I built the pipeline end to end: user profiles and behavioral signals flow from a BigQuery warehouse through the Hightouch CDP into Nexus, which selects each message and sends it through Braze — and Braze's engagement events flow back in to keep the bandits learning.
+      </div>
+      <div class="pills"><span class="pill" style="color:#60a5fa">TypeScript</span><span class="pill" style="color:#a5b4fc">Next.js</span><span class="pill" style="color:#f472b6">Machine Learning</span><span class="pill" style="color:#34d399">Prisma</span><span class="pill" style="color:#f9a8d4">Postgres</span></div>
       <div class="actions"><a class="btn" href="https://nexus-ai-demo-dl.vercel.app" target="_blank" rel="noopener">View Demo ↗</a><a class="btn alt" href="https://github.com/ender1311/nexusAi" target="_blank" rel="noopener">Code ↗</a></div>
     </div>
     <div class="shot"><video class="reel" src="./videos/nexus.mp4" poster="./projects/nexus-1.png" muted loop playsinline preload="none" aria-label="Nexus demo walkthrough"></video></div>
@@ -247,7 +248,7 @@
     <div class="info">
       <div class="num"><span class="s">//</span><span class="n">02</span></div>
       <h3><img class="ic" src="./icons/beacon.png" alt="Beacon icon" loading="lazy">Beacon</h3>
-      <div class="desc">A self-service AI platform that lets non-technical marketers <strong>design, configure, and launch cross-channel campaigns themselves</strong> — work that used to require an engineer. Built on a 24-component creative schema and a 17-handler workflow registry with a governed Draft → Approved → Sent flow.</div>
+      <div class="desc">Architect & tech lead<br> A self-service platform that took campaign creation off engineering's critical path: marketers design, localize, and launch cross-channel campaigns reaching 100M+ users. I designed the 24-component creative schema that renders consistently across email, push, in-app from a single source of truth, and the Draft → Approved → Sent governance layer that lets marketers ship safely while the org keeps control of what actually goes out. Impact: 24 campaigns/month now launch with zero engineering involvement, cutting typical launch time from 3 days to 3 hours.</div>
       <div class="pills"><span class="pill" style="color:#a5b4fc">Next.js</span><span class="pill" style="color:#22d3ee">React</span><span class="pill" style="color:#34d399">Drizzle</span><span class="pill" style="color:#f9a8d4">Postgres</span><span class="pill" style="color:#fb923c">Braze</span></div>
       <div class="actions"><a class="btn" href="https://beacon-nine-rouge.vercel.app" target="_blank" rel="noopener">View Demo ↗</a><a class="btn alt" href="https://github.com/ender1311/beacon" target="_blank" rel="noopener">Code ↗</a></div>
     </div>
@@ -260,7 +261,7 @@
     <div class="info">
       <div class="num"><span class="s">//</span><span class="n">03</span></div>
       <h3><img class="ic" src="./icons/versecut.svg" alt="VerseCut icon" loading="lazy">VerseCut</h3>
-      <div class="desc">Turns a single reference into a polished image or video ad — composited, captioned, and voiced <strong>entirely in the browser</strong>. Rendering runs client-side via FFmpeg compiled to WebAssembly with on-device text-to-speech, keeping cost and infrastructure near zero.</div>
+      <div class="desc">Turns a single reference into a polished image or video ad — composited, captioned, and voiced <strong>entirely in the browser</strong>. Rendering runs client-side via FFmpeg compiled to WebAssembly with on-device text-to-speech and subtitles, keeping cost and infrastructure near zero.</div>
       <div class="pills"><span class="pill" style="color:#a5b4fc">Next.js</span><span class="pill" style="color:#22d3ee">React</span><span class="pill" style="color:#f87171">FFmpeg WASM</span><span class="pill" style="color:#fbbf24">Kokoro TTS</span></div>
       <div class="actions"><a class="btn" href="https://versecut-gamma.vercel.app" target="_blank" rel="noopener">View Demo ↗</a><a class="btn alt" href="https://github.com/ender1311/versecut" target="_blank" rel="noopener">Code ↗</a></div>
     </div>
@@ -274,7 +275,7 @@
       <div class="num"><span class="s">//</span><span class="n">04</span></div>
       <h3><img class="ic" src="./icons/wayfinder.svg" alt="Wayfinder icon" loading="lazy">Wayfinder</h3>
 
-      <div class="desc">Generates <strong>deep links and QR codes</strong> that route people to the right content across platforms — built so marketing and growth teams can spin up, manage, and track campaign links from a single, fast interface.</div>
+      <div class="desc">Generates <strong>deep links and QR codes</strong> that route people to the right content across platforms — built so marketing and growth teams can spin up, manage, and track campaign links from a single, fast interface. The API endpoints allow for pulling CMS data for smart and personalized communications.</div>
       <div class="pills"><span class="pill" style="color:#a5b4fc">Next.js</span><span class="pill" style="color:#22d3ee">React</span><span class="pill" style="color:#38bdf8">tRPC</span><span class="pill" style="color:#f9a8d4">Postgres</span><span class="pill" style="color:#fbbf24">Firebase</span></div>
       <div class="actions"><a class="btn" href="https://wayfinder-livid.vercel.app" target="_blank" rel="noopener">View Demo ↗</a><a class="btn alt" href="https://github.com/ender1311/wayfinder" target="_blank" rel="noopener">Code ↗</a></div>
     </div>
@@ -303,7 +304,7 @@
       <div class="tl reveal"><div class="dot"></div><div class="yr">Now</div>
         <h3>Marketing Technology &amp; AI Product Developer</h3>
         <div class="org">YouVersion · Life.Church — 2023–Present</div>
-        <p>The AI builder-and-enabler for marketing teams on a 1 Billion+ install product. Architected <strong>Nexus</strong> (agentic ML decisioning) and <strong>Beacon</strong> (self-service campaign platform), shipped an LLM workflow that produces launch-ready creative in <strong>70+ languages</strong>, and drove a <strong>200% increase in monthly campaign revenue</strong> — operating as an effectively one-person platform team.</p>
+        <p>The AI builder for marketing team on a 1 Billion+ install product. Architected <strong>Nexus</strong> (agentic ML decisioning) and <strong>Beacon</strong> (self-service campaign platform), that produces launch-ready creative in <strong>70+ languages</strong>, and drove a <strong>200% increase in monthly campaign revenue</strong> — operating as an effectively one-person platform team.</p>
       </div>
       <div class="tl reveal"><div class="dot"></div><div class="yr">2023</div>
         <h3>Software Engineer</h3>
@@ -378,8 +379,8 @@
   function sync(c){ document.querySelectorAll('.theme-seg button').forEach(function(b){ b.setAttribute('aria-pressed', String(b.getAttribute('data-choice')===c)); }); }
   function apply(c){ root.className=resolved(c); root.setAttribute('data-theme-choice', c); try{ localStorage.setItem('theme', c); }catch(e){} sync(c); paint(); }
   document.querySelectorAll('.theme-seg button').forEach(function(b){ b.addEventListener('click', function(){ apply(b.getAttribute('data-choice')); }); });
-  mq.addEventListener('change', function(){ if((root.getAttribute('data-theme-choice')||'system')==='system'){ root.className=mq.matches?'dark':'light'; paint(); } });
-  sync(root.getAttribute('data-theme-choice')||'system'); paint();
+  mq.addEventListener('change', function(){ if((root.getAttribute('data-theme-choice')||'dark')==='system'){ root.className=mq.matches?'dark':'light'; paint(); } });
+  sync(root.getAttribute('data-theme-choice')||'dark'); paint();
 
   // grid parallax
   var gridInner=document.querySelector('#grid div'), ticking=false;
