@@ -119,8 +119,9 @@
   .btn.alt:hover{background:var(--third); color:var(--primary)}
   .proj .shot{flex:1; max-width:560px; width:100%}
   .carousel{position:relative; width:100%; aspect-ratio:128/86; border-radius:14px; overflow:hidden; border:1px solid var(--line); box-shadow:0 30px 60px -30px rgba(0,0,0,.5); background:var(--bg-2)}
-  .carousel img{position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:top center; opacity:0; transition:opacity 1s ease}
-  .carousel img.on{opacity:1}
+  .carousel img{position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:top center; opacity:0; transform:scale(1.05); transition:opacity .55s ease}
+  .carousel img.on{opacity:1; animation:kenburns 1.9s ease-out both}
+  @keyframes kenburns{from{transform:scale(1.05)}to{transform:scale(1.11)}}
   .carousel .dots{position:absolute; bottom:10px; left:50%; transform:translateX(-50%); display:flex; gap:6px; z-index:2}
   .carousel .dots i{width:6px; height:6px; border-radius:50%; background:rgba(180,180,180,.55); transition:.3s}
   .carousel .dots i.on{background:var(--secondary); width:16px; border-radius:3px}
@@ -242,7 +243,7 @@
       <div class="pills"><span class="pill" style="color:#60a5fa">TypeScript</span><span class="pill" style="color:#a5b4fc">Next.js</span><span class="pill" style="color:#f472b6">From-scratch ML</span><span class="pill" style="color:#34d399">Prisma</span><span class="pill" style="color:#f9a8d4">Postgres</span></div>
       <div class="actions"><a class="btn" href="https://nexus-ai-demo-dl.vercel.app" target="_blank" rel="noopener">View Demo ↗</a><a class="btn alt" href="https://github.com/ender1311/nexusAi" target="_blank" rel="noopener">Code ↗</a></div>
     </div>
-    <div class="shot"><div class="carousel" data-carousel><img src="./projects/nexus-1.png" class="on" alt="Nexus dashboard" loading="lazy"><img src="./projects/nexus-2.png" alt="Nexus agents" loading="lazy"></div></div>
+    <div class="shot"><div class="carousel" data-carousel><img src="./projects/nexus-1.png" class="on" alt="Nexus overview dashboard" loading="lazy"><img src="./projects/nexus-2.png" alt="Nexus control tower — AI agents" loading="lazy"><img src="./projects/nexus-3.png" alt="Nexus agents management" loading="lazy"></div></div>
   </div>
 </section>
 
@@ -255,7 +256,7 @@
       <div class="pills"><span class="pill" style="color:#a5b4fc">Next.js</span><span class="pill" style="color:#22d3ee">React</span><span class="pill" style="color:#34d399">Drizzle</span><span class="pill" style="color:#f9a8d4">Postgres</span><span class="pill" style="color:#fb923c">Braze</span></div>
       <div class="actions"><a class="btn" href="https://beacon-nine-rouge.vercel.app" target="_blank" rel="noopener">View Demo ↗</a><a class="btn alt" href="https://github.com/ender1311/beacon" target="_blank" rel="noopener">Code ↗</a></div>
     </div>
-    <div class="shot"><div class="carousel" data-carousel><img src="./projects/beacon-1.png" class="on" alt="Beacon campaign calendar" loading="lazy"><img src="./projects/beacon-2.png" alt="Beacon campaigns" loading="lazy"></div></div>
+    <div class="shot"><div class="carousel" data-carousel><img src="./projects/beacon-1.png" class="on" alt="Beacon campaign calendar" loading="lazy"><img src="./projects/beacon-2.png" alt="Beacon campaigns list" loading="lazy"><img src="./projects/beacon-3.png" alt="Beacon campaign detail" loading="lazy"></div></div>
   </div>
 </section>
 
@@ -268,7 +269,7 @@
       <div class="pills"><span class="pill" style="color:#a5b4fc">Next.js</span><span class="pill" style="color:#22d3ee">React</span><span class="pill" style="color:#f87171">FFmpeg WASM</span><span class="pill" style="color:#fbbf24">Kokoro TTS</span></div>
       <div class="actions"><a class="btn" href="https://versecut-gamma.vercel.app" target="_blank" rel="noopener">View Demo ↗</a><a class="btn alt" href="https://github.com/ender1311/versecut" target="_blank" rel="noopener">Code ↗</a></div>
     </div>
-    <div class="shot"><div class="carousel" data-carousel><img src="./projects/versecut-1.png" class="on" alt="VerseCut builder" loading="lazy"><img src="./projects/versecut-2.png" alt="VerseCut rendered ad" loading="lazy"></div></div>
+    <div class="shot"><div class="carousel" data-carousel><img src="./projects/versecut-1.png" class="on" alt="VerseCut background library" loading="lazy"><img src="./projects/versecut-2.png" alt="VerseCut generated verse ads" loading="lazy"><img src="./projects/versecut-3.png" alt="VerseCut ad builder" loading="lazy"></div></div>
   </div>
 </section>
 
@@ -281,7 +282,7 @@
       <div class="pills"><span class="pill" style="color:#a5b4fc">Next.js</span><span class="pill" style="color:#22d3ee">React</span><span class="pill" style="color:#38bdf8">tRPC</span><span class="pill" style="color:#f9a8d4">Postgres</span><span class="pill" style="color:#fbbf24">Firebase</span></div>
       <div class="actions"><a class="btn" href="https://wayfinder-livid.vercel.app" target="_blank" rel="noopener">View Demo ↗</a><a class="btn alt" href="https://github.com/ender1311/wayfinder" target="_blank" rel="noopener">Code ↗</a></div>
     </div>
-    <div class="shot"><div class="carousel" data-carousel><img src="./projects/wayfinder-1.png" class="on" alt="Wayfinder deeplink builder" loading="lazy"><img src="./projects/wayfinder-2.png" alt="Wayfinder plan collections" loading="lazy"></div></div>
+    <div class="shot"><div class="carousel" data-carousel><img src="./projects/wayfinder-1.png" class="on" alt="Wayfinder deeplink builder with QR" loading="lazy"><img src="./projects/wayfinder-2.png" alt="Wayfinder deeplink inventory" loading="lazy"><img src="./projects/wayfinder-3.png" alt="Wayfinder plan collections" loading="lazy"></div></div>
   </div>
 </section>
 
@@ -444,7 +445,7 @@
       imgs[i].classList.remove('on'); di[i].classList.remove('on');
       i=(i+1)%imgs.length;
       imgs[i].classList.add('on'); di[i].classList.add('on');
-    }, 3800 + idx*300);
+    }, 1500);
   });
 
   // reveal on scroll
