@@ -48,15 +48,11 @@
     -webkit-mask-image:linear-gradient(to bottom,black 60%,transparent 100%); mask-image:linear-gradient(to bottom,black 60%,transparent 100%);}
   #grid div{position:absolute; inset:0; background-image:radial-gradient(var(--dot) 1px, transparent 1px); background-size:36px 36px}
 
-  /* sidebar */
-  .side{position:fixed; top:40px; left:30px; width:56px; z-index:999; display:flex; flex-direction:column; align-items:center; gap:180px}
-  .logo{font-family:var(--pop); font-weight:700; font-size:30px; color:var(--header); cursor:pointer; transition:transform .3s; line-height:1}
-  .logo b{color:var(--secondary)}
-  .logo:hover{transform:scale(1.05)}
-  .vnav{transform:rotate(-90deg); display:flex; gap:22px; white-space:nowrap; font-family:var(--pop); font-size:13px; letter-spacing:.08em; font-weight:500}
-  .vnav a{color:var(--header); transition:color .3s}
-  .vnav a:hover{color:var(--secondary)}
-  @media(max-width:900px){.side{display:none}}
+  /* desktop top nav */
+  .topnav{position:fixed; top:24px; left:40px; z-index:999; display:flex; align-items:center; height:34px; gap:32px; font-family:var(--pop); font-size:14px; font-weight:500; letter-spacing:.04em}
+  .topnav a{color:var(--header); transition:color .3s}
+  .topnav a:hover{color:var(--secondary)}
+  @media(max-width:900px){.topnav{display:none}}
 
   /* mobile top nav */
   .mnav{position:fixed; top:14px; left:14px; right:14px; z-index:999; display:none; align-items:center; justify-content:center; padding:11px 16px; border-radius:999px; border:1px solid var(--line); background:color-mix(in srgb, var(--primary) 85%, transparent); backdrop-filter:blur(10px)}
@@ -86,7 +82,7 @@
   .screen{min-height:100vh; display:flex; align-items:center; padding:90px 30px; position:relative}
   .screen>*{min-width:0; max-width:100%}
   .hero>div{width:100%; max-width:880px}
-  @media(min-width:901px){.screen{padding-left:120px; padding-right:80px}}
+  @media(min-width:901px){.screen{padding-left:60px; padding-right:60px}}
 
   /* HERO */
   .hero .name{font-family:var(--pop); font-weight:700; letter-spacing:.22em; color:var(--header); font-size:clamp(1.4rem,4vw,2.5rem)}
@@ -178,15 +174,12 @@
 <body>
 <div id="grid"><div></div></div>
 
-<!-- sidebar -->
-<nav class="side">
-  <a href="#home" class="logo" aria-label="Home">D<b>.</b>L</a>
-  <div class="vnav">
-    <a href="#contact">CONTACT</a>
-    <a href="#experience">EXPERIENCE</a>
-    <a href="#project1">PROJECTS</a>
-    <a href="#about">ABOUT</a>
-  </div>
+<!-- desktop top nav -->
+<nav class="topnav">
+  <a href="#about">ABOUT</a>
+  <a href="#project1">PROJECTS</a>
+  <a href="#experience">EXPERIENCE</a>
+  <a href="#contact">CONTACT</a>
 </nav>
 <nav class="mnav">
   <div class="mlinks">
@@ -225,7 +218,7 @@
   <div>
     <div class="name" id="nm">DAN LUK</div>
     <div class="role" id="role"><span class="sw"></span></div>
-    <div class="quote" id="quote">"I build AI tools that change how teams work — replacing manual, engineer-dependent work with self-service systems teams run on their own."</div>
+    <div class="quote" id="quote">"I build AI tools that change how teams work — replacing slow, engineer-dependent processes with self-service systems anyone on the team can run."</div>
     <div class="slider"><div class="track" id="track"></div></div>
   </div>
 </section>
