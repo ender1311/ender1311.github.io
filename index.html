@@ -49,7 +49,7 @@
   #grid div{position:absolute; inset:0; background-image:radial-gradient(var(--dot) 1px, transparent 1px); background-size:36px 36px}
 
   /* desktop top nav */
-  .topnav{position:fixed; top:24px; left:40px; z-index:999; display:flex; align-items:center; height:34px; gap:32px; font-family:var(--pop); font-size:14px; font-weight:500; letter-spacing:.04em}
+  .topnav{position:fixed; top:0; left:0; right:0; z-index:999; display:flex; align-items:center; height:60px; padding:0 40px; gap:32px; font-family:var(--pop); font-size:14px; font-weight:500; letter-spacing:.04em; background:color-mix(in srgb, var(--primary) 93%, transparent); backdrop-filter:blur(12px); border-bottom:1px solid var(--line)}
   .topnav a{color:var(--header); transition:color .3s}
   .topnav a:hover{color:var(--secondary)}
   @media(max-width:900px){.topnav{display:none}}
@@ -61,7 +61,7 @@
   @media(max-width:900px){.mnav{display:flex}}
 
   /* corner widgets */
-  .topright{position:fixed; top:24px; right:30px; z-index:1000; display:flex; align-items:center; gap:14px}
+  .topright{position:fixed; top:13px; right:40px; z-index:1000; display:flex; align-items:center; gap:14px}
   .cv{font-family:var(--pop); font-size:14px; color:var(--header); display:flex; align-items:center; gap:8px; cursor:pointer; transition:color .3s}
   .cv:hover{color:var(--secondary)}
   .theme-seg{display:inline-flex; align-items:center; border:1px solid var(--line); border-radius:999px; padding:3px; gap:2px; background:var(--card)}
