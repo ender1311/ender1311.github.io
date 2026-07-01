@@ -11,7 +11,8 @@
 <meta property="og:url" content="https://dan-luk.com/">
 <link rel="canonical" href="https://dan-luk.com/">
 <meta name="author" content="Dan Luk">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23070c0f'/%3E%3Ctext x='16' y='23' font-family='Poppins,Arial,sans-serif' font-size='19' font-weight='700' fill='%2389ECFF' text-anchor='middle'%3ED%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23070c0f'/%3E%3Ctext x='16' y='22' font-family='Poppins,Arial,sans-serif' font-size='15' font-weight='700' letter-spacing='-1' fill='%2389ECFF' text-anchor='middle'%3EDL%3C/text%3E%3C/svg%3E">
+<link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23070c0f'/%3E%3Ctext x='16' y='22' font-family='Poppins,Arial,sans-serif' font-size='15' font-weight='700' letter-spacing='-1' fill='%2389ECFF' text-anchor='middle'%3EDL%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;700&family=Anonymous+Pro:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
@@ -108,7 +109,7 @@
   .proj .num .s{color:var(--secondary); margin-right:10px}
   .proj .num .n{color:var(--header)}
   .proj h3{font-family:var(--pop); font-weight:600; font-size:clamp(2rem,4vw,3rem); display:flex; align-items:center; gap:14px}
-  .proj h3 .ic{width:46px; height:46px; border-radius:11px; background:var(--secondary); color:var(--primary); display:flex; align-items:center; justify-content:center; font-weight:700; font-size:20px; flex-shrink:0}
+  .proj h3 .ic{width:46px; height:46px; border-radius:11px; object-fit:cover; flex-shrink:0; box-shadow:0 4px 14px -6px rgba(0,0,0,.45); border:1px solid var(--line)}
   .proj .desc{font-family:var(--inter); color:var(--cfgray); font-size:clamp(1rem,1.4vw,1.25rem); line-height:1.6; margin-top:22px}
   .pills{display:flex; flex-wrap:wrap; gap:11px; margin-top:26px; font-family:var(--inter); font-size:14px}
   .pill{border:1.5px solid currentColor; border-radius:999px; padding:4px 13px}
@@ -232,7 +233,7 @@
   <div class="proj reveal">
     <div class="info">
       <div class="num"><span class="s">//</span><span class="n">01</span></div>
-      <h3><span class="ic">N</span>Nexus</h3>
+      <h3><img class="ic" src="./icons/nexus.png" alt="Nexus icon" loading="lazy">Nexus</h3>
       <div class="desc">An agentic personalization engine that autonomously chooses what, when, and how to message each of <strong>50M+ users in real time</strong>. The ML is built from scratch in TypeScript — Thompson Sampling, LinUCB, and HDBSCAN persona clustering — with a reward loop that learns from live engagement.</div>
       <div class="pills"><span class="pill" style="color:#60a5fa">TypeScript</span><span class="pill" style="color:#a5b4fc">Next.js</span><span class="pill" style="color:#f472b6">From-scratch ML</span><span class="pill" style="color:#34d399">Prisma</span><span class="pill" style="color:#f9a8d4">Postgres</span></div>
       <div class="actions"><a class="btn" href="https://nexus-ai-demo-dl.vercel.app" target="_blank" rel="noopener">View Demo ↗</a><a class="btn alt" href="https://github.com/ender1311/nexusAi" target="_blank" rel="noopener">Code ↗</a></div>
@@ -245,7 +246,7 @@
   <div class="proj reveal">
     <div class="info">
       <div class="num"><span class="s">//</span><span class="n">02</span></div>
-      <h3><span class="ic">B</span>Beacon</h3>
+      <h3><img class="ic" src="./icons/beacon.png" alt="Beacon icon" loading="lazy">Beacon</h3>
       <div class="desc">A self-service AI platform that lets non-technical marketers <strong>design, configure, and launch cross-channel campaigns themselves</strong> — work that used to require an engineer. Built on a 24-component creative schema and a 17-handler workflow registry with a governed Draft → Approved → Sent flow.</div>
       <div class="pills"><span class="pill" style="color:#a5b4fc">Next.js</span><span class="pill" style="color:#22d3ee">React</span><span class="pill" style="color:#34d399">Drizzle</span><span class="pill" style="color:#f9a8d4">Postgres</span><span class="pill" style="color:#fb923c">Braze</span></div>
       <div class="actions"><a class="btn" href="https://beacon-nine-rouge.vercel.app" target="_blank" rel="noopener">View Demo ↗</a><a class="btn alt" href="https://github.com/ender1311/beacon" target="_blank" rel="noopener">Code ↗</a></div>
@@ -258,7 +259,7 @@
   <div class="proj reveal">
     <div class="info">
       <div class="num"><span class="s">//</span><span class="n">03</span></div>
-      <h3><span class="ic">V</span>VerseCut</h3>
+      <h3><img class="ic" src="./icons/versecut.svg" alt="VerseCut icon" loading="lazy">VerseCut</h3>
       <div class="desc">Turns a single reference into a polished image or video ad — composited, captioned, and voiced <strong>entirely in the browser</strong>. Rendering runs client-side via FFmpeg compiled to WebAssembly with on-device text-to-speech, keeping cost and infrastructure near zero.</div>
       <div class="pills"><span class="pill" style="color:#a5b4fc">Next.js</span><span class="pill" style="color:#22d3ee">React</span><span class="pill" style="color:#f87171">FFmpeg WASM</span><span class="pill" style="color:#fbbf24">Kokoro TTS</span></div>
       <div class="actions"><a class="btn" href="https://versecut-gamma.vercel.app" target="_blank" rel="noopener">View Demo ↗</a><a class="btn alt" href="https://github.com/ender1311/versecut" target="_blank" rel="noopener">Code ↗</a></div>
@@ -271,7 +272,8 @@
   <div class="proj reveal">
     <div class="info">
       <div class="num"><span class="s">//</span><span class="n">04</span></div>
-      <h3><span class="ic">W</span>Wayfinder</h3>
+      <h3><img class="ic" src="./icons/wayfinder.svg" alt="Wayfinder icon" loading="lazy">Wayfinder</h3>
+
       <div class="desc">Generates <strong>deep links and QR codes</strong> that route people to the right content across platforms — built so marketing and growth teams can spin up, manage, and track campaign links from a single, fast interface.</div>
       <div class="pills"><span class="pill" style="color:#a5b4fc">Next.js</span><span class="pill" style="color:#22d3ee">React</span><span class="pill" style="color:#38bdf8">tRPC</span><span class="pill" style="color:#f9a8d4">Postgres</span><span class="pill" style="color:#fbbf24">Firebase</span></div>
       <div class="actions"><a class="btn" href="https://wayfinder-livid.vercel.app" target="_blank" rel="noopener">View Demo ↗</a><a class="btn alt" href="https://github.com/ender1311/wayfinder" target="_blank" rel="noopener">Code ↗</a></div>
@@ -284,7 +286,7 @@
   <div class="proj reveal">
     <div class="info">
       <div class="num"><span class="s">//</span><span class="n">05</span></div>
-      <h3><span class="ic">C</span>Captured</h3>
+      <h3><img class="ic" src="./icons/captured.png" alt="Captured icon" loading="lazy">Captured</h3>
       <div class="desc">A build dashboard and ingestion pipeline for <strong>capturing and structuring sites</strong> — a wizard-driven flow that scrapes, parses, and tracks builds end-to-end, with a clean operator view over the whole process.</div>
       <div class="pills"><span class="pill" style="color:#a5b4fc">Next.js</span><span class="pill" style="color:#22d3ee">React</span><span class="pill" style="color:#94a3b8">NextAuth</span><span class="pill" style="color:#34d399">Drizzle</span><span class="pill" style="color:#f9a8d4">Postgres</span></div>
       <div class="actions"><a class="btn" href="https://captured-tau.vercel.app" target="_blank" rel="noopener">View Demo ↗</a><a class="btn alt" href="https://github.com/ender1311/captured" target="_blank" rel="noopener">Code ↗</a></div>
