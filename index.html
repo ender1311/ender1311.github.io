@@ -59,9 +59,8 @@
   @media(max-width:900px){.side{display:none}}
 
   /* mobile top nav */
-  .mnav{position:fixed; top:14px; left:14px; right:14px; z-index:999; display:none; align-items:center; justify-content:space-between; padding:11px 18px; border-radius:999px; border:1px solid var(--line); background:color-mix(in srgb, var(--primary) 85%, transparent); backdrop-filter:blur(10px)}
-  .mnav .logo{font-size:22px}
-  .mnav .mlinks{display:flex; gap:14px; font-size:11px; letter-spacing:.06em; font-weight:700}
+  .mnav{position:fixed; top:14px; left:14px; right:14px; z-index:999; display:none; align-items:center; justify-content:center; padding:11px 16px; border-radius:999px; border:1px solid var(--line); background:color-mix(in srgb, var(--primary) 85%, transparent); backdrop-filter:blur(10px)}
+  .mnav .mlinks{display:flex; flex:1; justify-content:space-between; gap:8px; font-size:12px; letter-spacing:.04em; font-weight:700}
   .mnav .mlinks a{color:var(--header)}
   @media(max-width:900px){.mnav{display:flex}}
 
@@ -190,7 +189,6 @@
   </div>
 </nav>
 <nav class="mnav">
-  <a href="#home" class="logo">D<b>.</b>L</a>
   <div class="mlinks">
     <a href="#about">ABOUT</a>
     <a href="#project1">PROJECTS</a>
