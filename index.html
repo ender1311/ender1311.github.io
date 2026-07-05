@@ -6,9 +6,15 @@
 <title>Dan Luk</title>
 <meta name="description" content="Explore the portfolio of Dan Luk — an AI-native software engineer specializing in agentic systems, full-stack development, and turning AI into tools people actually use.">
 <meta name="theme-color" content="#070c0f" id="tc">
+<meta property="og:type" content="website">
 <meta property="og:title" content="Dan Luk — AI-Native Builder & Engineer">
 <meta property="og:description" content="I take AI products from zero to shipped — in front of real users fast.">
 <meta property="og:url" content="https://dan-luk.com/">
+<meta property="og:image" content="https://dan-luk.com/headshot.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Dan Luk — AI-Native Builder & Engineer">
+<meta name="twitter:description" content="I take AI products from zero to shipped — in front of real users fast.">
+<meta name="twitter:image" content="https://dan-luk.com/headshot.jpg">
 <link rel="canonical" href="https://dan-luk.com/">
 <meta name="author" content="Dan Luk">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23070c0f'/%3E%3Ctext x='16' y='22' font-family='Poppins,Arial,sans-serif' font-size='15' font-weight='700' letter-spacing='-1' fill='%2389ECFF' text-anchor='middle'%3EDL%3C/text%3E%3C/svg%3E">
@@ -35,7 +41,7 @@
   }
   :root{ --pop:'Poppins',sans-serif; --inter:'Inter',sans-serif; --mono:'Anonymous Pro',monospace; }
   *{margin:0;padding:0;box-sizing:border-box}
-  html{scroll-behavior:smooth; overflow-x:hidden}
+  html{scroll-behavior:smooth; overflow-x:hidden; scroll-padding-top:70px}
   body{background:var(--primary); color:var(--cfgray); font-family:var(--pop); overflow-x:hidden; max-width:100%; transition:background .35s ease,color .35s ease; -webkit-font-smoothing:antialiased}
   h1,h2,h3,h4{color:var(--header)}
   a{color:inherit; text-decoration:none}
@@ -419,14 +425,13 @@
   // tech marquee
   (function(){
     var base='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/';
-    var icons=[['typescript','typescript-original'],['javascript','javascript-original'],['react','react-original'],['nodedotjs','']];
     var list=[
       ['typescript','typescript-original',0],['javascript','javascript-original',0],['react','react-original',0],
       ['nodejs','nodejs-original',0],['python','python-original',0],['postgresql','postgresql-original',0],
       ['tailwindcss','tailwindcss-original',0],['git','git-original',0],['firebase','firebase-plain',0],
       ['docker','docker-original',0],['googlecloud','googlecloud-original',0]
     ];
-    var track=document.getElementById('track'), html='';
+    var track=document.getElementById('track');
     function imgs(){ return list.map(function(t){ return '<img src="'+base+t[0]+'/'+t[1]+'.svg" alt="'+t[0]+'" loading="lazy">'; }).join(''); }
     track.innerHTML = imgs()+imgs();
   })();
