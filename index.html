@@ -154,10 +154,14 @@
   .tl p a:hover{border-bottom-color:var(--secondary)}
   @media(max-width:640px){.timeline{margin-left:10px; padding-left:30px} .tl .yr{position:static; width:auto; text-align:left; margin-bottom:6px} .tl .dot{left:-39px}}
 
-  /* inline tooltip */
-  .tip{position:relative; color:var(--header); border-bottom:1px dotted var(--secondary); cursor:help}
-  .tip .tipbox{position:absolute; left:0; bottom:calc(100% + 8px); width:min(300px,78vw); background:var(--primary); color:var(--cfgray); border:1px solid var(--line); border-radius:10px; padding:10px 12px; font-family:var(--inter); font-size:13px; line-height:1.55; box-shadow:0 14px 34px -14px rgba(0,0,0,.6); opacity:0; transform:translateY(4px); pointer-events:none; transition:opacity .2s ease, transform .2s ease; z-index:60}
-  .tip:hover .tipbox, .tip:focus-within .tipbox{opacity:1; transform:none}
+  /* inline info-icon tooltip */
+  .tip{position:relative; display:inline-flex; align-items:center; vertical-align:middle; margin-left:3px; color:var(--secondary); cursor:help}
+  .tip>svg{width:15px; height:15px; display:block}
+  .tip .tipbox{position:absolute; left:50%; bottom:calc(100% + 10px); transform:translate(-50%,4px); width:min(420px,88vw); background:var(--primary); color:var(--cfgray); border:1px solid var(--line); border-radius:10px; padding:12px 14px; font-family:var(--inter); font-size:13px; line-height:1.55; text-align:left; box-shadow:0 16px 38px -14px rgba(0,0,0,.65); opacity:0; pointer-events:none; transition:opacity .2s ease, transform .2s ease; z-index:60}
+  .tip .tipbox strong{display:block; color:var(--header); font-weight:600; margin-bottom:6px}
+  .tip .tipbox .eqs{display:block; margin-top:10px; padding-top:10px; border-top:1px solid var(--line); font-family:var(--mono); font-size:12px; line-height:2; color:var(--header)}
+  .tip .tipbox .eqs b{color:var(--secondary); font-weight:700; margin-right:6px}
+  .tip:hover .tipbox, .tip:focus-within .tipbox{opacity:1; transform:translate(-50%,0)}
 
   /* LIFE */
   .life{width:100%; max-width:1000px; margin:0 auto; display:flex; flex-direction:column; gap:40px}
@@ -330,7 +334,7 @@
       <div class="tl reveal"><div class="dot"></div><div class="yr">Now</div>
         <h3>Marketing Technology &amp; AI Product Developer</h3>
         <div class="org">YouVersion · Life.Church — 2023–Present</div>
-        <p>The AI builder and enabler for marketing teams on a 1 billion+ install product. Architected <strong>Nexus</strong> (agentic ML decisioning) and <strong>Beacon</strong> (a self-service campaign platform that ships launch-ready creative in <strong>70+ languages</strong>), and contributed to a <strong>200% increase in monthly campaign revenue</strong> — effectively a one-person platform team.</p>
+        <p>The AI builder and enabler for marketing teams on a 1 billion+ install product. Architected <strong>Nexus</strong> (agentic ML decisioning) and <strong>Beacon</strong> (a self-service campaign platform that ships launch-ready creative in <strong>70+ languages</strong>), and contributed to a <strong>200% increase in monthly campaign revenue</strong></p>
       </div>
       <div class="tl reveal"><div class="dot"></div><div class="yr">2023</div>
         <h3>Software Engineer</h3>
@@ -355,7 +359,7 @@
       <div class="tl reveal"><div class="dot"></div><div class="yr">2008</div>
         <h3>M.S.E., Aeronautical &amp; Aerospace Engineering</h3>
         <div class="org">The Ohio State University</div>
-        <p>Graduate study in aerospace engineering — where systems thinking and reasoning under uncertainty became second nature. My <a href="./Dan_Luk_Masters_Thesis.pdf" target="_blank" rel="noopener">master's thesis ↗</a> predicted turbine-blade heat transfer with a 3D compressible CFD solver built on the <span class="tip" tabindex="0">Navier–Stokes equations<span class="tipbox">Newton's second law for continuous materials — they calculate the velocity and pressure of a fluid by balancing forces like inertia, viscosity, and gravity.</span></span>.</p>
+        <p>Graduate study in aerospace engineering — where systems thinking and reasoning under uncertainty became second nature. My <a href="./Dan_Luk_Masters_Thesis.pdf" target="_blank" rel="noopener">master's thesis ↗</a> predicted turbine-blade heat transfer with a 3D compressible CFD solver built on the Navier–Stokes equations<span class="tip" tabindex="0" role="img" aria-label="Reynolds-averaged Navier–Stokes governing equations"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><path d="M12 8h.01"/></svg><span class="tipbox"><strong>Reynolds-Averaged Navier–Stokes</strong>Newton's second law for continuous materials — they calculate the velocity and pressure of a fluid by balancing forces like inertia, viscosity, and gravity.<span class="eqs"><b>Mass</b>∂ρ/∂t + ∂/∂x<sub>j</sub>[ρ(u<sub>j</sub>−V<sub>j</sub>)] = 0<br><b>Momentum</b>∂ρu<sub>i</sub>/∂t + ∂/∂x<sub>j</sub>[ρ(u<sub>j</sub>−V<sub>j</sub>)u<sub>i</sub> + pδ<sub>ij</sub> − τ<sub>ij</sub>] = S<sub>i</sub><br><b>Energy</b>∂E<sub>t</sub>/∂t + ∂/∂x<sub>j</sub>[(u<sub>j</sub>−V<sub>j</sub>)(E<sub>t</sub>+p) − u<sub>i</sub>τ<sub>ij</sub> − q<sub>j</sub>] = 0</span></span></span>.</p>
       </div>
       <div class="tl reveal"><div class="dot"></div><div class="yr">2006</div>
         <h3>B.S.E., Aeronautical &amp; Aerospace Engineering</h3>
