@@ -173,6 +173,11 @@
   .life-photos img{width:100%; aspect-ratio:4/3; object-fit:cover; border-radius:14px; border:1px solid var(--line); box-shadow:0 30px 60px -30px rgba(0,0,0,.5)}
   .life-photos figcaption{font-family:var(--inter); font-size:13px; color:var(--cfgray); margin-top:10px; opacity:.8}
   @media(max-width:760px){.life-photos{grid-template-columns:1fr}}
+  .remodel-photos{display:grid; grid-template-columns:repeat(3,1fr); gap:20px}
+  .remodel-photos figure{margin:0}
+  .remodel-photos img{width:100%; aspect-ratio:4/3; object-fit:cover; border-radius:14px; border:1px solid var(--line); box-shadow:0 30px 60px -30px rgba(0,0,0,.5)}
+  .remodel-photos figcaption{font-family:var(--inter); font-size:13px; color:var(--cfgray); margin-top:10px; opacity:.8}
+  @media(max-width:760px){.remodel-photos{grid-template-columns:1fr}}
 
   /* CONTACT */
   .contact{display:flex; align-items:center; justify-content:center; gap:60px; width:100%}
@@ -370,6 +375,22 @@
   </div>
 </section>
 
+<!-- CONTACT -->
+<section class="screen" id="contact">
+  <div class="contact reveal">
+    <div class="word">BUILDER</div>
+    <img class="portrait" src="./headshot.jpg" alt="Dan Luk" loading="lazy">
+    <div class="c-body">
+      <h2>Let's build something.</h2>
+      <p>I'm looking for work where I build from scratch — taking something from a raw idea to a shipped product in users' hands. I'm at my best before the answer is obvious: choosing the architecture, pressure-testing it against real users, and cutting what shouldn't get built. Fastest way to reach me is email.</p>
+      <div class="c-actions">
+        <a class="btn" href="mailto:danluk1311@gmail.com">Get in touch ↗</a>
+        <a class="btn alt" href="./Dan_Luk_Resume.pdf" target="_blank" rel="noopener">Résumé ↓</a>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- LIFE -->
 <section class="screen" id="life">
   <div class="life reveal">
@@ -385,18 +406,18 @@
   </div>
 </section>
 
-<!-- CONTACT -->
-<section class="screen" id="contact">
-  <div class="contact reveal">
-    <div class="word">BUILDER</div>
-    <img class="portrait" src="./headshot.jpg" alt="Dan Luk" loading="lazy">
-    <div class="c-body">
-      <h2>Let's build something.</h2>
-      <p>I'm looking for work where I build from scratch — taking something from a raw idea to a shipped product in users' hands. I'm at my best before the answer is obvious: choosing the architecture, pressure-testing it against real users, and cutting what shouldn't get built. Fastest way to reach me is email.</p>
-      <div class="c-actions">
-        <a class="btn" href="mailto:danluk1311@gmail.com">Get in touch ↗</a>
-        <a class="btn alt" href="./Dan_Luk_Resume.pdf" target="_blank" rel="noopener">Résumé ↓</a>
-      </div>
+<!-- KITCHEN REMODEL -->
+<section class="screen" id="remodel">
+  <div class="life reveal">
+    <div class="life-head">
+      <div class="num"><span class="s">//</span><span class="n">nights & weekends</span></div>
+      <h2>I gutted the kitchen myself.</h2>
+      <p>Same instinct as the software: take something that doesn't work, figure out how it's actually held together, and rebuild it right. I took this one down to the studs — including a load-bearing wall, reframed with a beam to carry the load — and put it back together into a space we actually live in. Different tools, same discipline: measure twice, respect the constraints, sweat the finish.</p>
+    </div>
+    <div class="remodel-photos">
+      <figure><img src="./story/kitchen-before.jpg" alt="Kitchen before the remodel" loading="lazy"><figcaption>Before — dated and closed-in.</figcaption></figure>
+      <figure><img src="./story/kitchen-during.jpg" alt="Mid-construction after removing a load-bearing wall" loading="lazy"><figcaption>Mid-build — load-bearing wall out, beam in.</figcaption></figure>
+      <figure><img src="./story/kitchen-after.jpg" alt="The finished remodeled kitchen" loading="lazy"><figcaption>After — open, bright, and ours.</figcaption></figure>
     </div>
   </div>
 </section>
