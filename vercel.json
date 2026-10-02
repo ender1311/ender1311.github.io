@@ -1,9 +1,5 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  // Proxy /aiLeadGen (and lowercase /aileadgen) to the aiLeadGen Next.js app.
-  // Destination host: sitelens-one.vercel.app (Vercel project aileadgen; app uses basePath /aiLeadGen).
-  // Both casings go to the external URL because Vercel does not chain rewrites.
-  // These paths do not exist as static files, so index.html / portfolio / other assets are unchanged.
   "rewrites": [
     { "source": "/aileadgen", "destination": "https://sitelens-one.vercel.app/aiLeadGen" },
     { "source": "/aileadgen/:path*", "destination": "https://sitelens-one.vercel.app/aiLeadGen/:path*" },
