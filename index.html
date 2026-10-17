@@ -65,6 +65,8 @@
   .mnav{position:fixed; top:14px; left:14px; right:14px; z-index:999; display:none; align-items:center; justify-content:center; padding:11px 16px; border-radius:999px; border:1px solid var(--line); background:color-mix(in srgb, var(--primary) 85%, transparent); backdrop-filter:blur(10px)}
   .mnav .mlinks{display:flex; flex:1; justify-content:space-between; gap:8px; font-size:12px; letter-spacing:.04em; font-weight:700}
   .mnav .mlinks a{color:var(--header)}
+  .mnav .venture{flex:none; margin-left:12px; padding:2px}
+  .mnav .venture img{width:22px; height:22px}
   @media(max-width:900px){.mnav{display:flex}}
 
   /* corner widgets */
@@ -83,7 +85,7 @@
   .social{position:fixed; bottom:34px; right:30px; z-index:1000; display:flex; flex-direction:column; align-items:center; gap:18px; font-size:24px; color:var(--cfgray); background:color-mix(in srgb, var(--primary) 90%, transparent); backdrop-filter:blur(10px); border:1px solid var(--line); border-radius:999px; padding:15px 12px; box-shadow:0 10px 30px -18px rgba(0,0,0,.5)}
   .social svg{width:1em; height:1em; cursor:pointer; transition:transform .25s,color .25s; display:block}
   .social a:hover svg{color:var(--secondary); transform:scale(1.12)}
-  @media(max-width:900px){.topright{top:auto; bottom:22px; right:auto; left:20px} .cv{display:none} .venture span{display:none} .venture{padding:4px} .social{flex-direction:row; bottom:26px; right:auto; left:50%; transform:translateX(-50%); font-size:22px}}
+  @media(max-width:900px){.topright{top:auto; bottom:22px; right:auto; left:20px} .cv{display:none} .topright .venture{display:none} .social{flex-direction:row; bottom:26px; right:auto; left:50%; transform:translateX(-50%); font-size:22px}}
 
   .scrollcue{position:fixed; bottom:40px; left:0; right:0; z-index:60; display:flex; flex-direction:column; align-items:center; gap:10px; color:var(--header); font-family:var(--inter); font-size:12px; pointer-events:none}
   .scrollcue svg{width:22px; height:22px; animation:pulse 1.6s ease-in-out infinite}
@@ -221,11 +223,14 @@
     <a href="#contact">CONTACT</a>
     <a href="./Dan_Luk_Resume.pdf" target="_blank" rel="noopener">CV</a>
   </div>
+  <a class="venture" href="https://beaconfrontier.com" target="_blank" rel="noopener" aria-label="Beacon Frontier (opens in new tab)" title="Beacon Frontier">
+    <img src="./icons/beaconfrontier.svg" alt="" width="22" height="22">
+  </a>
 </nav>
 
 <div class="topright">
   <a class="venture" href="https://beaconfrontier.com" target="_blank" rel="noopener" aria-label="Beacon Frontier (opens in new tab)" title="Beacon Frontier">
-    <img src="./icons/beacon.png" alt="" width="24" height="24">
+    <img src="./icons/beaconfrontier.svg" alt="" width="24" height="24">
     <span>beaconfrontier.com <span class="arr">↗</span></span>
   </a>
   <div class="theme-seg" role="group" aria-label="Color theme">
