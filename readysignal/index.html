@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" class="dark app-readysignal">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ReadySignal — wake up knowing how hard to go today</title>
+<meta name="description" content="ReadySignal looks at last night's sleep and your heart data in Apple Health and gives you one plain answer: push, maintain, or recover.">
+<meta name="theme-color" content="#070c0f" id="tc">
+<link rel="canonical" href="https://dan-luk.com/readysignal">
+<meta name="author" content="Dan Luk">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23070c0f'/%3E%3Ctext x='16' y='22' font-family='Poppins,Arial,sans-serif' font-size='15' font-weight='700' fill='%237CDBB0' text-anchor='middle'%3ERS%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/apps/apps.css">
+<script>
+  (function(){ try{
+    var c = localStorage.getItem('theme') || 'dark';
+    var sysDark = matchMedia('(prefers-color-scheme: dark)').matches;
+    document.documentElement.className = 'app-readysignal ' + (c === 'system' ? (sysDark ? 'dark' : 'light') : c);
+    document.documentElement.setAttribute('data-theme-choice', c);
+  }catch(e){ document.documentElement.className='dark app-readysignal'; } })();
+</script>
+<!-- Pending Dan review: landing copy is drafted; not legal advice. -->
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div id="grid"><div></div></div>
+<header class="topbar">
+  <a class="brand" href="/readysignal"><span class="mark">RS</span> ReadySignal</a>
+  <div class="nav-links">
+    <a class="home-link" href="/">Dan Luk</a>
+    <a href="/readysignal/privacy">Privacy</a>
+    <a href="/readysignal/terms">Terms</a>
+    <div class="theme-seg" role="group" aria-label="Color theme">
+      <button type="button" data-choice="light" aria-label="Light theme" title="Light"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></button>
+      <button type="button" data-choice="dark" aria-label="Dark theme" title="Dark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button>
+      <button type="button" data-choice="system" aria-label="System theme" title="System"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></button>
+    </div>
+  </div>
+</header>
+<main id="main" class="wrap">
+  <section class="hero">
+    <p class="kicker">ReadySignal</p>
+    <h1>Wake up knowing how hard to go today.</h1>
+    <p class="lede">ReadySignal looks at last night's sleep and your heart data in Apple Health, compares them with your own last two weeks, and gives you one plain answer: push, maintain, or recover.</p>
+    <div class="cta-row">
+      <a class="btn" data-cta data-app="ReadySignal">Get notified at launch</a>
+      <p class="hint">One email when it's in the App Store. Coaching context, not medical advice.</p>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="familiar">
+    <h2 id="familiar">Sound familiar?</h2>
+    <div class="scenes">
+      <article class="scene">
+        <h3>The 6 a.m. guess.</h3>
+        <p>Your alarm goes off before a planned interval run. You feel... fine? Maybe? You stand in the kitchen trying to decide whether "a little tired" means rest or just coffee.</p>
+      </article>
+      <article class="scene">
+        <h3>The number that means nothing.</h3>
+        <p>Your watch gave you a 71. Is that good? Compared to what? You've got a pile of charts and still no answer about today.</p>
+      </article>
+      <article class="scene">
+        <h3>The week you pushed anyway.</h3>
+        <p>Late flight Sunday, hard session Monday, wiped out by Wednesday. Looking back, the signs were there. Nobody put them in one sentence for you.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="how">
+    <h2 id="how">How it works</h2>
+    <ol class="steps">
+      <li class="step"><div><strong>Connect Apple Health.</strong> ReadySignal tells you exactly what it reads (sleep, heart, activity, workouts) and why. It only reads. It never writes.</div></li>
+      <li class="step"><div><strong>Give it a few nights.</strong> Your Day Brief stays empty until there's enough data to compare against your own baseline. No made-up first-day scores.</div></li>
+      <li class="step"><div><strong>Read one line each morning.</strong> Charge, Strain, and a Recovery Cue: Push, Maintain, or Recover, with a "Low data" badge when it isn't sure yet.</div></li>
+    </ol>
+  </section>
+
+  <section class="section" aria-labelledby="inside">
+    <h2 id="inside">What's inside</h2>
+    <ul class="features">
+      <li><strong>Day Brief:</strong> Charge, Strain, and one-sentence cue, measured against your last 14 days.</li>
+      <li><strong>Today's activity band:</strong> a target Strain range from today's cue, with progress as your activity comes in.</li>
+      <li><strong>Overnight check-in:</strong> last night's sleep vs your 14-day average, and how it nudged today's cue.</li>
+      <li><strong>Event tags:</strong> Travel, Alcohol, Late meal, Illness, Hard day, Late bed, Stressful day. See how your next-day Charge compared. (That's a pattern, not a diagnosis.)</li>
+      <li><strong>Workout review:</strong> your Watch workouts with heart-rate zone and Strain vs that day's cue.</li>
+      <li><strong>Tells you when it's broken:</strong> if Health access drops, you get a clear repair step, not quietly stale numbers.</li>
+    </ul>
+  </section>
+
+  <section class="section" aria-labelledby="faq">
+    <h2 id="faq">Questions</h2>
+    <div class="faq">
+      <details open>
+        <summary>Do I need an Apple Watch?</summary>
+        <p>ReadySignal reads from Apple Health on your iPhone. For sleep and heart-rate variability, that usually means wearing an Apple Watch. There is no ReadySignal Watch app in the first release.</p>
+      </details>
+      <details>
+        <summary>Is there a Watch app?</summary>
+        <p>Not in the first release. Your cue lives on your iPhone.</p>
+      </details>
+      <details>
+        <summary>Where does my health data go?</summary>
+        <p>It stays on your iPhone. ReadySignal reads it from Apple Health and works it out on the device. We don't upload it, sell it, or use it for ads.</p>
+      </details>
+      <details>
+        <summary>Is this medical advice?</summary>
+        <p>No. ReadySignal is coaching context for training and recovery. It isn't a diagnosis or a medical device. If something feels wrong, talk to a clinician.</p>
+      </details>
+      <details>
+        <summary>What will it cost?</summary>
+        <p>Today's Day Brief and activity band are planned to be free. Deeper history may be a paid upgrade later. Pricing isn't set.</p>
+      </details>
+      <details>
+        <summary>Why 14 days?</summary>
+        <p>It's long enough to know what normal looks like for you, and short enough to keep up with your training, travel, and life.</p>
+      </details>
+    </div>
+  </section>
+
+  <section class="close" aria-labelledby="close">
+    <h2 id="close">Less guessing at 6 a.m.</h2>
+    <a class="btn" data-cta data-app="ReadySignal">Get notified at launch</a>
+  </section>
+</main>
+<footer class="wrap site-footer">
+  <p>ReadySignal is an independent app by Dan Luk. It isn't affiliated with Apple or with any other company named "Ready Signal." Apple Health and Apple Watch are trademarks of Apple Inc. This page is also support for the app.</p>
+  <p data-contact></p>
+  <nav aria-label="Legal">
+    <a href="/readysignal/privacy">Privacy</a>
+    <a href="/readysignal/terms">Terms</a>
+    <a href="/readysignal">Support</a>
+    <a href="/">dan-luk.com</a>
+  </nav>
+</footer>
+<script src="/apps/config.js"></script>
+<script src="/apps/apps.js"></script>
+</body>
+</html>

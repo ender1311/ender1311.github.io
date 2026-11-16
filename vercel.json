@@ -1,5 +1,16 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
+  "redirects": [
+    { "source": "/privacy/siteproof", "destination": "/siteproof/privacy", "permanent": true },
+    { "source": "/privacy/readysignal", "destination": "/readysignal/privacy", "permanent": true },
+    { "source": "/privacy/ainotetaker", "destination": "/ainotetaker/privacy", "permanent": true },
+    { "source": "/terms/siteproof", "destination": "/siteproof/terms", "permanent": true },
+    { "source": "/terms/readysignal", "destination": "/readysignal/terms", "permanent": true },
+    { "source": "/terms/ainotetaker", "destination": "/ainotetaker/terms", "permanent": true },
+    { "source": "/siteproof/support", "destination": "/siteproof", "permanent": true },
+    { "source": "/readysignal/support", "destination": "/readysignal", "permanent": true },
+    { "source": "/ainotetaker/support", "destination": "/ainotetaker", "permanent": true }
+  ],
   "rewrites": [
     { "source": "/aileadgen", "destination": "https://sitelens-one.vercel.app/aiLeadGen" },
     { "source": "/aileadgen/:path*", "destination": "https://sitelens-one.vercel.app/aiLeadGen/:path*" },
